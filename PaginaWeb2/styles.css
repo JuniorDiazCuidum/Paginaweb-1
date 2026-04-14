@@ -533,7 +533,7 @@ nav {
     padding: 2.5rem 2rem;
     background: var(--white);
     border-radius: 12px;
-    transition: all 0.3s ease;
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
     text-align: left;
     border-left: 4px solid var(--mint-light);
     cursor: pointer;
@@ -541,19 +541,19 @@ nav {
 
 .feature-item:hover {
     border-left-color: var(--mint-dark);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-    transform: translateX(8px);
+    box-shadow: 0 4px 12px rgba(108, 92, 231, 0.08);
+    transform: translateY(-2px);
 }
 
 .feature-item.active {
     background: var(--mint-dark);
     border-left-color: var(--mint-dark);
-    box-shadow: 0 12px 24px rgba(108, 92, 231, 0.3);
-    transform: translateX(8px);
+    box-shadow: 0 8px 20px rgba(108, 92, 231, 0.2);
+    transform: translateY(-3px);
 }
 
 .feature-item.active .feature-number {
-    color: var(--white);
+    color: #FFFFFF;
 }
 
 .feature-item.active h3 {
@@ -569,12 +569,16 @@ nav {
     font-size: 2rem;
     color: var(--mint-light);
     margin-bottom: 1rem;
-    transition: color 0.3s ease;
+    transition: color 0.6s cubic-bezier(0.4, 0, 0.2, 1);
     font-weight: bold;
 }
 
 .feature-item:hover .feature-number {
     color: var(--mint-dark);
+}
+
+.feature-item.active:hover .feature-number {
+    color: #FFFFFF;
 }
 
 .feature-item h3 {
@@ -1028,9 +1032,9 @@ footer {
 /* Scroll Animations */
 .fade-in {
     opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1), 
-                transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translateY(10px);
+    transition: opacity 1.2s cubic-bezier(0.16, 1, 0.3, 1), 
+                transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .fade-in.visible {
@@ -1437,7 +1441,8 @@ footer {
     
     .feature-item:hover {
         border-right-color: var(--mint-dark);
-        transform: translateX(-8px);
+        transform: translateX(-2px);
+        box-shadow: 0 2px 8px rgba(108, 92, 231, 0.08);
     }
     
     .feature-number {
@@ -1541,5 +1546,52 @@ footer {
     
     .stat-number {
         font-size: 2rem;
+    }
+}
+
+/* WhatsApp Floating Button */
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 30px;
+    right: 30px;
+    background-color: #25D366;
+    color: #FFF;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    text-decoration: none;
+}
+
+.whatsapp-float:hover {
+    background-color: #128C7E;
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 8px 20px rgba(37, 211, 102, 0.5);
+}
+
+.whatsapp-float svg {
+    width: 32px;
+    height: 32px;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .whatsapp-float {
+        width: 50px;
+        height: 50px;
+        bottom: 20px;
+        right: 20px;
+    }
+    
+    .whatsapp-float svg {
+        width: 26px;
+        height: 26px;
     }
 }

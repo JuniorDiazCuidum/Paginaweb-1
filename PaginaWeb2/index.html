@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Limpy</title>
+    <link rel="icon" href="https://limpy.gestoriaencasa.es/images/favicon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <a href="#" class="logo">LIMPY</a>
+        <button class="menu-toggle" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#testimonios">Testimonios</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><button class="cta-button">RESERVAR</button></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>TU HOGAR <span class="highlight">IMPECABLE</span> MERECE LO MEJOR</h1>
+                <p>Transformamos espacios con limpieza profesional premium. Agenda en minutos, relájate para siempre.</p>
+                <div class="hero-buttons">
+                    <a href="#contacto" class="btn-primary">AGENDAR AHORA</a>
+                    <a href="#servicios" class="btn-secondary">VER SERVICIOS</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="visual-card">
+                    <div class="stat">
+                        <div class="stat-number">5,000+</div>
+                        <div class="stat-label">Hogares felices</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">98%</div>
+                        <div class="stat-label">Satisfacción garantizada</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">24/7</div>
+                        <div class="stat-label">Atención disponible</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="servicios">
+        <h2 class="section-title">SERVICIOS</h2>
+        <p class="section-subtitle">Soluciones de limpieza profesional adaptadas a tus necesidades</p>
+        
+        <div class="services-grid">
+            <div class="service-card fade-in">
+                <span class="service-icon">
+                    <svg width="70" height="70" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                    </svg>
+                </span>
+                <h3>LIMPIEZA REGULAR</h3>
+                <p>Mantenimiento periódico para que tu hogar siempre esté impecable.</p>
+                <ul class="service-features">
+                    <li>Limpieza de todas las habitaciones</li>
+                    <li>Cocina y baños completos</li>
+                    <li>Aspirado y trapeado</li>
+                    <li>Desinfección de superficies</li>
+                </ul>
+            </div>
+            
+            <div class="service-card fade-in">
+                <span class="service-icon">
+                    <svg width="70" height="70" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <path d="M12 6v6l4 2"></path>
+                    </svg>
+                </span>
+                <h3>LIMPIEZA PROFUNDA</h3>
+                <p>Atención detallada a cada rincón de tu espacio.</p>
+                <ul class="service-features">
+                    <li>Limpieza detallada de áreas difíciles</li>
+                    <li>Ventanas y marcos</li>
+                    <li>Electrodomésticos por dentro</li>
+                    <li>Desinfección intensiva</li>
+                </ul>
+            </div>
+            
+            <div class="service-card fade-in">
+                <span class="service-icon">
+                    <svg width="70" height="70" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                    </svg>
+                </span>
+                <h3>LIMPIEZA EXPRESS</h3>
+                <p>Solución rápida para eventos o visitas inesperadas.</p>
+                <ul class="service-features">
+                    <li>Servicio en 2-3 horas</li>
+                    <li>Áreas prioritarias</li>
+                    <li>Disponibilidad inmediata</li>
+                    <li>Resultados garantizados</li>
+                </ul>
+            </div>
+            
+            <div class="service-card fade-in">
+                <span class="service-icon">
+                    <svg width="70" height="70" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                        <line x1="9" y1="9" x2="15" y2="9"></line>
+                        <line x1="9" y1="15" x2="15" y2="15"></line>
+                    </svg>
+                </span>
+                <h3>OFICINAS</h3>
+                <p>Espacios de trabajo profesionales y productivos.</p>
+                <ul class="service-features">
+                    <li>Horarios flexibles</li>
+                    <li>Protocolo de seguridad</li>
+                    <li>Equipos especializados</li>
+                    <li>Planes corporativos</li>
+                </ul>
+            </div>
+            
+            <div class="service-card fade-in">
+                <span class="service-icon">
+                    <svg width="70" height="70" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 2a10 10 0 0 0 10 10 4 4 0 0 1-6.8 2.8L12 12v8a10 10 0 0 1 0-18z"></path>
+                    </svg>
+                </span>
+                <h3>ECO-LIMPIEZA</h3>
+                <p>Productos biodegradables para un hogar saludable.</p>
+                <ul class="service-features">
+                    <li>Productos certificados</li>
+                    <li>Sin químicos tóxicos</li>
+                    <li>Apto para mascotas y niños</li>
+                    <li>Compromiso ambiental</li>
+                </ul>
+            </div>
+            
+            <div class="service-card fade-in">
+                <span class="service-icon">
+                    <svg width="70" height="70" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                        <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                        <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                    </svg>
+                </span>
+                <h3>MUDANZAS</h3>
+                <p>Limpieza completa pre o post mudanza.</p>
+                <ul class="service-features">
+                    <li>Espacios vacíos o llenos</li>
+                    <li>Eliminación de residuos</li>
+                    <li>Preparación de entrega</li>
+                    <li>Garantía de depósito</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Us Section -->
+    <section class="why-us" id="nosotros">
+        <h2 class="section-title">¿POR QUÉ LIMPY?</h2>
+        <p class="section-subtitle">La excelencia no es un acto, es un hábito</p>
+        
+        <div class="features-grid">
+            <div class="feature-item fade-in">
+                <div class="feature-number">01</div>
+                <h3>PROFESIONALES VERIFICADOS</h3>
+                <p>Todo nuestro equipo pasa por rigurosos controles de antecedentes y capacitación continua en técnicas de limpieza profesional.</p>
+            </div>
+            
+            <div class="feature-item fade-in">
+                <div class="feature-number">02</div>
+                <h3>GARANTÍA TOTAL</h3>
+                <p>Si no quedas 100% satisfecho, volvemos sin costo adicional. Tu tranquilidad es nuestra prioridad.</p>
+            </div>
+            
+            <div class="feature-item fade-in">
+                <div class="feature-number">03</div>
+                <h3>EQUIPOS PREMIUM</h3>
+                <p>Utilizamos productos de grado profesional y equipos de última generación para resultados superiores.</p>
+            </div>
+            
+            <div class="feature-item fade-in">
+                <div class="feature-number">04</div>
+                <h3>FLEXIBILIDAD TOTAL</h3>
+                <p>Adaptamos horarios a tu agenda. Cambios o cancelaciones sin penalización con 24h de anticipación.</p>
+            </div>
+            
+            <div class="feature-item fade-in">
+                <div class="feature-number">05</div>
+                <h3>SEGUROS & BONDED</h3>
+                <p>Cobertura completa contra daños. Tu propiedad está protegida en todo momento.</p>
+            </div>
+            
+            <div class="feature-item fade-in">
+                <div class="feature-number">06</div>
+                <h3>PRECIOS TRANSPARENTES</h3>
+                <p>Sin costos ocultos ni sorpresas. Cotización clara y detallada antes de cada servicio.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonios">
+        <h2 class="section-title">TESTIMONIOS</h2>
+        <p class="section-subtitle">Más de 5,000 clientes satisfechos respaldan nuestro trabajo</p>
+        
+        <div class="testimonials-slider">
+            <div class="testimonial-card fade-in">
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-text">"¡Increíble servicio! Mi casa quedó impecable y el equipo fue super profesional. Sin duda los recomendaré a todos mis amigos."</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">MC</div>
+                    <div class="author-info">
+                        <h4>María Contreras</h4>
+                        <p>Cliente desde 2024</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonial-card fade-in">
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-text">"Uso Limpy mensualmente para mi oficina. El servicio es consistente, puntual y el precio es muy competitivo. ¡Excelente inversión!"</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">JR</div>
+                    <div class="author-info">
+                        <h4>Jorge Ramírez</h4>
+                        <p>Plan corporativo</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonial-card fade-in">
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-text">"Después de mi mudanza, contraté la limpieza profunda. Mi nuevo hogar quedó brillante y listo para vivir. ¡Gracias Limpy!"</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">LP</div>
+                    <div class="author-info">
+                        <h4>Laura Pérez</h4>
+                        <p>Limpieza de mudanza</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contacto">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>RESERVA TU LIMPIEZA HOY</h2>
+                <p>Completa el formulario y te contactaremos en menos de 2 horas para confirmar tu servicio.</p>
+                
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <div class="contact-item-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <strong>Teléfono</strong><br>
+                            +52 (55) 1234-5678
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-item-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </div>
+                        <div>
+                            <strong>Email</strong><br>
+                            contacto@limpy.com
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-item-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                        </div>
+                        <div>
+                            <strong>Horario</strong><br>
+                            Lun - Dom: 7:00 AM - 10:00 PM
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <label for="name">Nombre Completo</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Teléfono</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="service">Tipo de Servicio</label>
+                    <select id="service" name="service" required>
+                        <option value="">Selecciona un servicio</option>
+                        <option value="regular">Limpieza Regular</option>
+                        <option value="profunda">Limpieza Profunda</option>
+                        <option value="express">Limpieza Express</option>
+                        <option value="oficina">Oficinas</option>
+                        <option value="eco">Eco-Limpieza</option>
+                        <option value="mudanza">Mudanzas</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Mensaje (Opcional)</label>
+                    <textarea id="message" name="message" rows="4"></textarea>
+                </div>
+                
+                <button type="submit" class="submit-btn">SOLICITAR COTIZACIÓN</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3>LIMPY</h3>
+                <p>Transformamos tu espacio en un lugar impecable. Profesionalismo, confianza y calidad garantizada.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="Instagram">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="Twitter">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="WhatsApp">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <h4>SERVICIOS</h4>
+                <ul>
+                    <li><a href="#servicios">Limpieza Regular</a></li>
+                    <li><a href="#servicios">Limpieza Profunda</a></li>
+                    <li><a href="#servicios">Express</a></li>
+                    <li><a href="#servicios">Oficinas</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-links">
+                <h4>COMPAÑÍA</h4>
+                <ul>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#testimonios">Testimonios</a></li>
+                    <li><a href="#">Carreras</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-links">
+                <h4>LEGAL</h4>
+                <ul>
+                    <li><a href="#">Términos y Condiciones</a></li>
+                    <li><a href="#">Política de Privacidad</a></li>
+                    <li><a href="#">Garantía</a></li>
+                    <li><a href="#">Seguros</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2026 Limpy. Todos los derechos reservados. Hecho con ❤️ para hogares impecables.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const menuToggle = document.getElementById('menuToggle');
+        const navLinks = document.getElementById('navLinks');
+        
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+        
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                menuToggle.classList.remove('active');
+                navLinks.classList.remove('active');
+            });
+        });
+        
+        // Scroll Animation Observer
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry, index) => {
+                if (entry.isIntersecting) {
+                    setTimeout(() => {
+                        entry.target.classList.add('visible');
+                    }, index * 100);
+                }
+            });
+        }, observerOptions);
+        
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+        
+        // Smooth Scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const href = this.getAttribute('href');
+                if (href && href !== '#' && href.length > 1) {
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                }
+            });
+        });
+        
+        // Form Submission
+        const contactForm = document.getElementById('contactForm');
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(contactForm);
+            const data = Object.fromEntries(formData);
+            
+            // Simulate form submission
+            alert(`¡Gracias ${data.name}! Hemos recibido tu solicitud de ${data.service}. Te contactaremos pronto al ${data.phone}.`);
+            
+            // Reset form
+            contactForm.reset();
+            
+            // In production, you would send this data to a server:
+            // fetch('/api/contact', {
+            //     method: 'POST',
+            //     headers: { 'Content-Type': 'application/json' },
+            //     body: JSON.stringify(data)
+            // });
+        });
+        
+        // Parallax effect on hero
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const hero = document.querySelector('.hero');
+            if (hero) {
+                hero.style.transform = `translateY(${scrolled * 0.5}px)`;
+            }
+        });
+        
+        // Add active state to nav on scroll
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 100) {
+                nav.style.boxShadow = '0 4px 20px rgba(0,0,0,0.1)';
+            } else {
+                nav.style.boxShadow = 'none';
+            }
+        });
+    </script>
+</body>
+</html>

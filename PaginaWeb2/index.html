@@ -59,7 +59,7 @@
                     <span>Contacto</span>
                 </a>
             </li>
-            <li><a href="#contacto" class="btn-primary">RESERVAR AHORA</a></li>
+            <li><a href="#horario" class="btn-primary">RESERVAR AHORA</a></li>
         </ul>
     </nav>
 
@@ -69,10 +69,6 @@
             <div class="hero-text">
                 <h1>TU HOGAR <span class="highlight">IMPECABLE</span> MERECE LO MEJOR</h1>
                 <p>Transformamos espacios con limpieza profesional premium. Agenda en minutos, relájate para siempre.</p>
-                <div class="hero-buttons">
-                    <a href="#contacto" class="btn-primary">AGENDAR AHORA</a>
-                    <a href="#servicios" class="btn-secondary">VER SERVICIOS</a>
-                </div>
             </div>
             <div class="hero-visual">
                 <div class="visual-card">
@@ -89,6 +85,10 @@
                         <div class="stat-label">Atención disponible</div>
                     </div>
                 </div>
+            </div>
+            <div class="hero-buttons">
+                <a href="#horario" class="btn-primary">AGENDAR AHORA</a>
+                <a href="#servicios" class="btn-secondary">VER SERVICIOS</a>
             </div>
         </div>
     </section>
@@ -209,7 +209,7 @@
         <p class="section-subtitle">La excelencia no es un acto, es un hábito</p>
         
         <div class="features-grid">
-            <div class="feature-item fade-in">
+            <div class="feature-item fade-in active">
                 <div class="feature-number">01</div>
                 <h3>PROFESIONALES VERIFICADOS</h3>
                 <p>Todo nuestro equipo pasa por rigurosos controles de antecedentes y capacitación continua en técnicas de limpieza profesional.</p>
@@ -305,7 +305,7 @@
                 <p>Completa el formulario y te contactaremos en menos de 2 horas para confirmar tu servicio.</p>
                 
                 <div class="contact-details">
-                    <div class="contact-item">
+                    <a href="tel:+34912345678" class="contact-item contact-link">
                         <div class="contact-item-icon">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
@@ -315,9 +315,9 @@
                             <strong>Teléfono</strong><br>
                             +34 912 345 678
                         </div>
-                    </div>
+                    </a>
                     
-                    <div class="contact-item">
+                    <a href="mailto:info@limpy.com" class="contact-item contact-link">
                         <div class="contact-item-icon">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
@@ -326,20 +326,47 @@
                         </div>
                         <div>
                             <strong>Email</strong><br>
-                            contacto@limpy.com
+                            info@limpy.com
                         </div>
-                    </div>
+                    </a>
                     
-                    <div class="contact-item">
-                        <div class="contact-item-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <circle cx="12" cy="12" r="10"></circle>
-                                <polyline points="12 6 12 12 16 14"></polyline>
-                            </svg>
-                        </div>
-                        <div>
-                            <strong>Horario</strong><br>
-                            Lun - Dom: 7:00 AM - 10:00 PM
+                    <div class="contact-item contact-schedule" id="horario">
+                        <div class="schedule-container">
+                            <div class="schedule-header">
+                                <div class="schedule-icon-circle">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <polyline points="12 6 12 12 16 14"></polyline>
+                                    </svg>
+                                </div>
+                                <h3>Horario de Atención</h3>
+                            </div>
+                            <div class="schedule-grid">
+                                <div class="schedule-item">
+                                    <div class="day-label">Lunes</div>
+                                    <div class="time-label">7:00 - 22:00</div>
+                                </div>
+                                <div class="schedule-item">
+                                    <div class="day-label">Martes</div>
+                                    <div class="time-label">7:00 - 22:00</div>
+                                </div>
+                                <div class="schedule-item">
+                                    <div class="day-label">Miércoles</div>
+                                    <div class="time-label">8:00 - 22:00</div>
+                                </div>
+                                <div class="schedule-item">
+                                    <div class="day-label">Jueves</div>
+                                    <div class="time-label">7:00 - 22:00</div>
+                                </div>
+                                <div class="schedule-item">
+                                    <div class="day-label">Viernes</div>
+                                    <div class="time-label">7:00 - 23:00</div>
+                                </div>
+                                <div class="schedule-item">
+                                    <div class="day-label">Sábado</div>
+                                    <div class="time-label">8:00 - 20:00</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -348,17 +375,26 @@
             <form class="contact-form" id="contactForm">
                 <div class="form-group">
                     <label for="name">Nombre Completo</label>
-                    <input type="text" id="name" name="name" required>
+                    <input type="text" id="name" name="name" required 
+                           pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+" 
+                           title="Solo letras y espacios"
+                           minlength="3">
                 </div>
                 
                 <div class="form-group">
                     <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
+                    <input type="email" id="email" name="email" required
+                           pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                           title="Ingresa un email válido (ejemplo@correo.com)">
                 </div>
                 
                 <div class="form-group">
                     <label for="phone">Teléfono</label>
-                    <input type="tel" id="phone" name="phone" required>
+                    <input type="tel" id="phone" name="phone" required
+                           pattern="[0-9]{9,15}"
+                           title="Ingresa un número de teléfono válido (solo números, 9-15 dígitos)"
+                           minlength="9"
+                           maxlength="15">
                 </div>
                 
                 <div class="form-group">
@@ -376,7 +412,7 @@
                 
                 <div class="form-group">
                     <label for="message">Mensaje (Opcional)</label>
-                    <textarea id="message" name="message" rows="4"></textarea>
+                    <textarea id="message" name="message" rows="4" maxlength="500"></textarea>
                 </div>
                 
                 <button type="submit" class="submit-btn">SOLICITAR COTIZACIÓN</button>
@@ -533,6 +569,17 @@
             if (hero) {
                 hero.style.transform = `translateY(${scrolled * 0.5}px)`;
             }
+        });
+        
+        // Feature items active state
+        const featureItems = document.querySelectorAll('.feature-item');
+        featureItems.forEach(item => {
+            item.addEventListener('click', () => {
+                // Remove active class from all items
+                featureItems.forEach(i => i.classList.remove('active'));
+                // Add active class to clicked item
+                item.classList.add('active');
+            });
         });
         
         // Add active state to nav on scroll

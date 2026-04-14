@@ -1064,7 +1064,7 @@ footer {
     .nav-links a {
         display: flex;
         align-items: center;
-        justify-content: flex-end;
+        justify-content: flex-start;
         gap: 1rem;
         width: 100%;
         padding: 1rem;
@@ -1074,8 +1074,8 @@ footer {
         border-radius: 15px;
         transition: all 0.3s ease;
         background: transparent;
-        text-align: right;
-        flex-direction: row-reverse;
+        text-align: left;
+        flex-direction: row;
     }
     
     .nav-links a svg {
@@ -1088,7 +1088,7 @@ footer {
     
     .nav-links a:hover {
         background: rgba(108, 92, 231, 0.15);
-        transform: translateX(-10px);
+        transform: translateX(10px);
         color: var(--mint-dark);
     }
     
@@ -1098,7 +1098,7 @@ footer {
     
     .nav-links a span {
         flex: 1;
-        text-align: right;
+        text-align: left;
     }
     
     .nav-links.active {
@@ -1121,22 +1121,25 @@ footer {
         transform: rotate(-45deg) translateY(-12px);
     }
     
-    .nav-links .cta-button {
-        width: 100%;
+    .nav-links .btn-primary {
+        width: auto;
         background: var(--mint-dark);
         color: var(--white);
-        padding: 1.2rem;
+        padding: 1.2rem 2rem;
         font-size: 1.1rem;
-        border-radius: 15px;
+        border-radius: 50px;
         box-shadow: 0 4px 15px rgba(108, 92, 231, 0.3);
-        border: 3px solid var(--black);
+        border: none;
+        text-align: center;
+        margin: 0 auto;
+        display: block;
     }
     
-    .nav-links .cta-button:hover {
-        background: var(--black);
+    .nav-links .btn-primary:hover {
+        background: var(--mint);
         color: var(--white);
         transform: translateY(-3px);
-        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+        box-shadow: 0 6px 25px rgba(108, 92, 231, 0.4);
     }
     
     .hero-text h1 {

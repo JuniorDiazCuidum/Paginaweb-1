@@ -825,6 +825,12 @@ nav {
     border: 1px solid rgba(162, 155, 254, 0.15);
 }
 
+.schedule-item.closed {
+    background: #fafafa;
+    border-color: rgba(0, 0, 0, 0.12);
+    opacity: 0.85;
+}
+
 .day-label {
     font-weight: 600;
     font-size: 0.95rem;
@@ -833,12 +839,21 @@ nav {
     letter-spacing: -0.01em;
 }
 
+.schedule-item.closed .day-label {
+    color: #666;
+}
+
 .time-label {
     font-family: var(--font-display);
     font-size: 1.15rem;
     font-weight: 900;
     color: var(--mint-dark);
     letter-spacing: -0.03em;
+}
+
+.schedule-item.closed .time-label {
+    color: #888;
+    font-weight: 700;
 }
 
 @media (max-width: 768px) {
@@ -1240,7 +1255,7 @@ footer {
         right: -100%;
         width: 350px;
         max-height: 500px;
-        background: #FAFBFF;
+        background: #F5F3EE;
         flex-direction: column;
         padding: 3rem 2rem;
         gap: 0;

@@ -1,0 +1,15 @@
+make a html + css website  
+
+Create a clean website layout for a home cleaning service worker. Include a hero section, navigation bar, video section, social proof, pricing section, and contact page. Use soft colors, white space, and a modern color palette. Generate HTML code and explain the structure.
+
+Create a landing page for a home cleaning service. Include a hero section with a primary CTA button, list of services (deep cleaning, regular cleaning, etc.), video demo, social proof section, and pricing section. Use a clean and modern design with soft colors.
+
+Create a minimal personal website for a freelance home cleaner with a soft background, calm colors, service grid, about section, and navigation bar. Generate HTML code and suggest images.
+
+Create a Figma design for a modern home cleaning service website. Use soft colors, balanced white space, and a clean layout. Include hero section, service section, video section, and testimonials.
+
+Generate code for a contact page for a cleaning service with form validation using a modern programming language. Include name field, email field, service selection, message box, and submit button.
+
+Create a modern service website layout for a home cleaning business with service grid, hero section, booking button, and detailed service pages. Use a clean layout and balanced visuals.
+
+skill: npx skills add https://github.com/anthropics/skills --skill frontend-design

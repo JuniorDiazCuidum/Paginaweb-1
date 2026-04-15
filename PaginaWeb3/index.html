@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Limpy</title>
+    <link rel="icon" href="https://limpy.gestoriaencasa.es/images/favicon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <a href="#" class="logo">
+                <img src="https://limpy.gestoriaencasa.es/_next/image/?url=%2Fimages%2Flogos%2Flogo-blue.webp&w=256&q=75" alt="Limpy Logo">
+            </a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 12H21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M3 6H21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M3 18H21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <button class="mobile-close" id="mobileClose" aria-label="Close menu">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 5L5 15" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                        <path d="M5 5L15 15" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                    </svg>
+                </button>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#proceso">Proceso</a></li>
+                <li><a href="#testimonios">Testimonios</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Menu Overlay -->
+    <div class="menu-overlay" id="menuOverlay"></div>
+
+    <!-- Social Media Float (Izquierda Medio) -->
+    <div class="social-float">
+        <a href="https://facebook.com/limpy" target="_blank" aria-label="Facebook">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://instagram.com/limpy" target="_blank" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://twitter.com/limpy" target="_blank" aria-label="Twitter">
+            <i class="fab fa-twitter"></i>
+        </a>
+    </div>
+
+    <!-- WhatsApp Button (Derecha Abajo) -->
+    <a href="https://wa.me/34612345678?text=Hola,%20me%20gustaría%20solicitar%20información%20sobre%20sus%20servicios" 
+       class="whatsapp-button" 
+       target="_blank" 
+       aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="hero-content">
+            <h1>Limpieza Profesional <span>a Domicilio</span></h1>
+            <p>Tu hogar impecable está a un clic de distancia. Servicio premium, puntual y confiable.</p>
+            <div class="hero-buttons">
+                <a href="#contacto" class="btn-primary">Agendar Ahora</a>
+                <a href="#servicios" class="btn-secondary">Ver Servicios</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="servicios">
+        <h2 class="section-title">El Método Limpy</h2>
+        <p class="section-subtitle">Creado por profesionales</p>
+        
+        <div class="services-container">
+            <div class="service-item">
+                <div class="service-content">
+                    <h3 class="service-highlight">Personal Verificado</h3>
+                    <p>Todos nuestros profesionales pasan rigurosos controles de antecedentes. Cada miembro es capacitado continuamente en las mejores prácticas de limpieza, seguridad y atención al cliente.</p>
+                </div>
+                <div class="service-image">
+                    <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=400" alt="Personal Verificado">
+                </div>
+            </div>
+            
+            <div class="service-item reverse">
+                <div class="service-content">
+                    <h3 class="service-highlight">Productos Premium</h3>
+                    <p>Utilizamos únicamente productos de grado profesional certificados y eco-friendly. Equipos de última generación que garantizan resultados superiores sin dañar tus superficies ni el medio ambiente.</p>
+                </div>
+                <div class="service-image">
+                    <img src="https://images.unsplash.com/photo-1585421514284-efb74c2b69ba?w=400" alt="Productos Premium">
+                </div>
+            </div>
+            
+            <div class="service-item">
+                <div class="service-content">
+                    <h3 class="service-highlight">Agenda Flexible</h3>
+                    <p>Nuestro sistema de reservas te permite agendar en minutos. Elige el día y hora que mejor se adapte a tu rutina. Cancelaciones sin penalización con 24h de anticipación.</p>
+                </div>
+                <div class="service-image">
+                    <img src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=400" alt="Agenda Flexible">
+                </div>
+            </div>
+            
+            <div class="service-item reverse">
+                <div class="service-content">
+                    <h3 class="service-highlight">Garantía Total</h3>
+                    <p>Utilizamos métodos probados para que obtengas resultados impecables en cada visita. Si no quedas 100% satisfecho, volvemos sin costo adicional. Tu tranquilidad es nuestra prioridad.</p>
+                </div>
+                <div class="service-image">
+                    <img src="https://images.unsplash.com/photo-1628177142898-93e36e4e3a50?w=400" alt="Garantía Total">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process" id="proceso">
+        <h2 class="section-title">¿Cómo Funciona?</h2>
+        <p class="section-subtitle">Un proceso simple y transparente en 4 pasos</p>
+        
+        <div class="process-steps">
+            <div class="step">
+                <div class="step-number">1</div>
+                <h3>Agenda tu Servicio</h3>
+                <p>Selecciona el tipo de limpieza, fecha y hora que mejor se adapte a tu agenda.</p>
+            </div>
+            
+            <div class="step">
+                <div class="step-number">2</div>
+                <h3>Confirma los Detalles</h3>
+                <p>Recibe confirmación inmediata con el perfil del profesional asignado.</p>
+            </div>
+            
+            <div class="step">
+                <div class="step-number">3</div>
+                <h3>Servicio Profesional</h3>
+                <p>Nuestro equipo llega puntual con todos los materiales necesarios.</p>
+            </div>
+            
+            <div class="step">
+                <div class="step-number">4</div>
+                <h3>Disfruta del Resultado</h3>
+                <p>Relájate en tu espacio impecable. Satisfacción 100% garantizada.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Guarantees Section -->
+    <section class="guarantees">
+        <h2 class="section-title">Nuestras Garantías</h2>
+        <p class="section-subtitle">Tu tranquilidad es nuestra prioridad</p>
+        
+        <div class="guarantees-grid">
+            <div class="guarantee-card">
+                <div class="guarantee-image">
+                    <img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?w=500" alt="Seguro Total">
+                </div>
+                <div class="guarantee-content">
+                    <h3>Seguro Total</h3>
+                    <p>Cobertura completa contra cualquier daño o incidente durante el servicio</p>
+                </div>
+            </div>
+            
+            <div class="guarantee-card">
+                <div class="guarantee-image">
+                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=500" alt="Personal Verificado">
+                </div>
+                <div class="guarantee-content">
+                    <h3>Personal Verificado</h3>
+                    <p>Profesionales con antecedentes verificados y capacitación continua</p>
+                </div>
+            </div>
+            
+            <div class="guarantee-card">
+                <div class="guarantee-image">
+                    <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=500" alt="Calidad Garantizada">
+                </div>
+                <div class="guarantee-content">
+                    <h3>Calidad Garantizada</h3>
+                    <p>Si no estás satisfecho, volvemos sin costo adicional</p>
+                </div>
+            </div>
+            
+            <div class="guarantee-card">
+                <div class="guarantee-image">
+                    <img src="https://images.unsplash.com/photo-1509048191080-d2984bad6ae5?w=500" alt="Puntualidad">
+                </div>
+                <div class="guarantee-content">
+                    <h3>Puntualidad</h3>
+                    <p>Cumplimos con los horarios acordados sin excepciones</p>
+                </div>
+            </div>
+            
+            <div class="guarantee-card">
+                <div class="guarantee-image">
+                    <img src="https://images.unsplash.com/photo-1585421514738-01798e348b17?w=500" alt="Productos Premium">
+                </div>
+                <div class="guarantee-content">
+                    <h3>Productos Premium</h3>
+                    <p>Utilizamos solo productos de grado profesional certificados</p>
+                </div>
+            </div>
+            
+            <div class="guarantee-card">
+                <div class="guarantee-image">
+                    <img src="https://images.unsplash.com/photo-1633158829585-23ba8f7c8caf?w=500" alt="Precio Transparente">
+                </div>
+                <div class="guarantee-content">
+                    <h3>Precio Transparente</h3>
+                    <p>Sin costos ocultos ni sorpresas en tu factura</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonios">
+        <h2 class="section-title">Lo Que Dicen Nuestros Clientes</h2>
+        <p class="section-subtitle">Más de 5,000 hogares felices nos respaldan</p>
+        
+        <div class="testimonials-carousel-container">
+            <button class="carousel-btn prev" id="prevTestimonial" aria-label="Anterior">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            
+            <div class="testimonials-carousel">
+                <div class="testimonials-track" id="testimonialsTrack">
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p class="testimonial-text">"¡Increíble servicio! Mi casa quedó impecable y el equipo fue súper profesional. Sin duda los recomendaré a todos mis amigos."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="María Contreras">
+                            </div>
+                            <div>
+                                <div class="author-name">María Contreras</div>
+                                <div class="author-role">Cliente desde 2024</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p class="testimonial-text">"Uso Limpy mensualmente para mi oficina. El servicio es consistente, puntual y el precio es muy competitivo. ¡Excelente inversión!"</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Jorge Ramírez">
+                            </div>
+                            <div>
+                                <div class="author-name">Jorge Ramírez</div>
+                                <div class="author-role">Plan corporativo</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p class="testimonial-text">"Después de mi mudanza, contraté la limpieza profunda. Mi nuevo hogar quedó brillante y listo para vivir. ¡Gracias Limpy!"</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Laura Pérez">
+                            </div>
+                            <div>
+                                <div class="author-name">Laura Pérez</div>
+                                <div class="author-role">Limpieza de mudanza</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p class="testimonial-text">"Llevo 6 meses usando Limpy y estoy encantada. El personal siempre es amable, responsable y mi casa queda perfecta cada vez. Totalmente recomendado."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <img src="https://randomuser.me/api/portraits/women/25.jpg" alt="Carmen Gómez">
+                            </div>
+                            <div>
+                                <div class="author-name">Carmen Gómez</div>
+                                <div class="author-role">Servicio recurrente</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p class="testimonial-text">"Contraté Limpy para limpiar mi Airbnb entre huéspedes. Siempre puntuales y metódicos. Mis calificaciones han mejorado gracias a ellos."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <img src="https://randomuser.me/api/portraits/men/52.jpg" alt="Roberto Silva">
+                            </div>
+                            <div>
+                                <div class="author-name">Roberto Silva</div>
+                                <div class="author-role">Dueño de Airbnb</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <button class="carousel-btn next" id="nextTestimonial" aria-label="Siguiente">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+        
+        <div class="carousel-dots" id="carouselDots"></div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <h2 class="section-title">Preguntas Frecuentes</h2>
+        <p class="section-subtitle">Respondemos tus dudas más comunes</p>
+        
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>¿Qué incluye el servicio de limpieza regular?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    Incluye limpieza de todas las habitaciones, cocina completa, baños, aspirado, trapeado y desinfección de superficies de alto contacto. También limpiamos ventanas accesibles y organizamos espacios según tus preferencias.
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>¿Debo proporcionar productos de limpieza?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    No es necesario. Nuestro equipo llega con todos los productos y equipos profesionales necesarios. Si prefieres que usemos productos específicos, por favor indícalo al momento de reservar.
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>¿Cómo garantizan la seguridad de mi hogar?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    Todo nuestro personal pasa verificaciones de antecedentes criminales, está completamente asegurado y bonded. Además, firmamos acuerdos de confidencialidad y seguimos estrictos protocolos de seguridad.
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>¿Puedo cancelar o reprogramar mi cita?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    Sí, puedes cancelar o reprogramar sin penalización con al menos 24 horas de anticipación. Para cambios de último minuto, contáctanos directamente y haremos nuestro mejor esfuerzo para acomodarte.
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>¿Cuánto tiempo toma cada servicio?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    Depende del tamaño de tu espacio y el tipo de limpieza. Una limpieza regular de un apartamento de 2 habitaciones toma aproximadamente 2-3 horas. Te daremos un estimado preciso cuando reserves.
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>¿Ofrecen descuentos por servicios recurrentes?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    ¡Sí! Ofrecemos descuentos especiales para clientes que contratan servicios semanales, quincenales o mensuales. Consulta nuestros planes de suscripción al contactarnos.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contacto">
+        <div class="contact-wrapper">
+            <div class="contact-info">
+                <h2>Solicita tu Cotización Gratis</h2>
+                <p class="contact-description">Tu hogar merece el mejor servicio de limpieza. Completa el formulario y nos pondremos en contacto contigo en menos de 2 horas.</p>
+                
+                <div class="contact-benefits">
+                    <div class="benefit-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Respuesta en menos de 2 horas</span>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Presupuesto sin compromiso</span>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Profesionales verificados</span>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Agenda flexible a tu medida</span>
+                    </div>
+                </div>
+                
+                <div class="contact-direct">
+                    <h4>¿Prefieres llamar?</h4>
+                    <a href="tel:+34612345678" class="phone-number"><i class="fas fa-phone"></i> +34 612 345 678</a>
+                    <p class="schedule">Lunes a Viernes: 8:00 - 20:00<br>Sábados: 9:00 - 18:00</p>
+                </div>
+            </div>
+            
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <label for="nombre">¿Cómo te llamas? *</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre completo" required>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="telefono">Teléfono *</label>
+                        <input type="tel" id="telefono" name="telefono" placeholder="+34 600 000 000" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="servicio">Tipo de Servicio *</label>
+                    <select id="servicio" name="servicio" required>
+                        <option value="">Selecciona un servicio</option>
+                        <option value="regular">Limpieza Regular</option>
+                        <option value="profunda">Limpieza Profunda</option>
+                        <option value="express">Limpieza Express</option>
+                        <option value="oficina">Oficinas</option>
+                        <option value="eco">Eco-Limpieza</option>
+                        <option value="mudanza">Mudanzas</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="direccion">Dirección del Servicio *</label>
+                    <input type="text" id="direccion" name="direccion" placeholder="Calle, número, ciudad" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="fecha">Fecha Preferida *</label>
+                    <input type="date" id="fecha" name="fecha" required>
+                </div>
+
+                <div class="form-checkbox">
+                    <input type="checkbox" id="marketing" name="marketing">
+                    <label for="marketing">Acepto recibir comunicaciones de marketing de Limpy</label>
+                </div>
+
+                <button type="submit" class="submit-button">Solicitar Cotización</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <img src="https://limpy.gestoriaencasa.es/_next/image/?url=%2Fimages%2Flogos%2Flogo-blue.webp&w=256&q=75" alt="Limpy Logo">
+                <p>Transformamos tu espacio en un lugar impecable. Profesionalismo, confianza y calidad garantizada en cada servicio.</p>
+                <div class="footer-social">
+                    <a href="https://facebook.com/limpy" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://instagram.com/limpy" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com/limpy" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="https://linkedin.com/company/limpy" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Servicios</h4>
+                <ul>
+                    <li><a href="#servicios">Limpieza Regular</a></li>
+                    <li><a href="#servicios">Limpieza Profunda</a></li>
+                    <li><a href="#servicios">Express</a></li>
+                    <li><a href="#servicios">Oficinas</a></li>
+                    <li><a href="#servicios">Eco-Limpieza</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Compañía</h4>
+                <ul>
+                    <li><a href="#proceso">Cómo Funciona</a></li>
+                    <li><a href="#testimonios">Testimonios</a></li>
+                    <li><a href="#faq">Preguntas Frecuentes</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Contacto</h4>
+                <ul>
+                    <li><a href="tel:+34612345678"><i class="fas fa-phone"></i> +34 612 345 678</a></li>
+                    <li><a href="mailto:info@limpy.com"><i class="fas fa-envelope"></i> info@limpy.com</a></li>
+                    <li><i class="fas fa-clock"></i> Lun-Vie: 8:00-20:00</li>
+                    <li><i class="fas fa-clock"></i> Sáb: 9:00-18:00</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2026 Limpy. Todos los derechos reservados. Hecho con ❤️ para hogares impecables.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const menuToggle = document.getElementById('menuToggle');
+        const navLinks = document.getElementById('navLinks');
+        const menuOverlay = document.getElementById('menuOverlay');
+        const mobileClose = document.getElementById('mobileClose');
+        const header = document.querySelector('header');
+        
+        const closeMenu = () => {
+            menuToggle.classList.remove('active');
+            navLinks.classList.remove('active');
+            menuOverlay.classList.remove('active');
+            document.body.style.overflow = '';
+        };
+        
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            navLinks.classList.toggle('active');
+            menuOverlay.classList.toggle('active');
+            document.body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : '';
+        });
+        
+        // Close menu when clicking overlay
+        menuOverlay.addEventListener('click', closeMenu);
+        
+        // Close menu with close button
+        mobileClose.addEventListener('click', closeMenu);
+        
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', closeMenu);
+        });
+        
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const scrollPosition = window.pageYOffset;
+            
+            if (scrollPosition > 200) {
+                // Cuando baja más, header sólido blanco
+                header.classList.remove('scrolled-light');
+                header.classList.add('scrolled');
+            } else if (scrollPosition > 50) {
+                // Cuando empieza a bajar, semi-transparente
+                header.classList.remove('scrolled');
+                header.classList.add('scrolled-light');
+            } else {
+                // En la parte superior, completamente transparente
+                header.classList.remove('scrolled');
+                header.classList.remove('scrolled-light');
+            }
+        });
+        
+        // Smooth Scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const href = this.getAttribute('href');
+                if (href && href !== '#' && href.length > 1) {
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                }
+            });
+        });
+        
+        // Scroll Animation Observer
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry, index) => {
+                if (entry.isIntersecting) {
+                    setTimeout(() => {
+                        entry.target.classList.add('visible');
+                    }, index * 100);
+                }
+            });
+        }, observerOptions);
+        
+        // Observe all animated elements
+        document.querySelectorAll('.service-item, .step, .guarantee-card, .faq-item').forEach(el => {
+            observer.observe(el);
+        });
+        
+        // FAQ Accordion
+        document.querySelectorAll('.faq-item').forEach(item => {
+            const question = item.querySelector('.faq-question');
+            question.addEventListener('click', () => {
+                // Close other items
+                document.querySelectorAll('.faq-item').forEach(otherItem => {
+                    if (otherItem !== item) {
+                        otherItem.classList.remove('active');
+                    }
+                });
+                // Toggle current item
+                item.classList.toggle('active');
+            });
+        });
+        
+        // Testimonials Carousel with Fade Effect
+        const testimonialsTrack = document.getElementById('testimonialsTrack');
+        const prevBtn = document.getElementById('prevTestimonial');
+        const nextBtn = document.getElementById('nextTestimonial');
+        const dotsContainer = document.getElementById('carouselDots');
+        const testimonials = document.querySelectorAll('.testimonial-card');
+        
+        let currentPairIndex = 0;
+        const totalTestimonials = testimonials.length;
+        
+        function initializeCarousel() {
+            // Clear dots
+            dotsContainer.innerHTML = '';
+            
+            // Calculate number of pairs (shows 2 at a time, 1 in mobile)
+            const isMobile = window.innerWidth <= 968;
+            const pairsCount = isMobile ? totalTestimonials : Math.ceil(totalTestimonials / 2);
+            
+            // Create dots for each pair
+            for (let i = 0; i < pairsCount; i++) {
+                const dot = document.createElement('button');
+                dot.classList.add('carousel-dot');
+                if (i === 0) dot.classList.add('active');
+                dot.addEventListener('click', () => goToPair(i));
+                dotsContainer.appendChild(dot);
+            }
+            
+            // Show first pair
+            showPair(0);
+        }
+        
+        function showPair(pairIndex) {
+            const isMobile = window.innerWidth <= 968;
+            
+            // Hide all testimonials
+            testimonials.forEach(card => {
+                card.classList.remove('active');
+            });
+            
+            // Show the appropriate testimonials
+            if (isMobile) {
+                // Mobile: show one testimonial at a time
+                if (testimonials[pairIndex]) {
+                    testimonials[pairIndex].classList.add('active');
+                }
+            } else {
+                // Desktop: show two testimonials at a time
+                const firstIndex = pairIndex * 2;
+                const secondIndex = firstIndex + 1;
+                
+                if (testimonials[firstIndex]) {
+                    testimonials[firstIndex].classList.add('active');
+                }
+                if (testimonials[secondIndex]) {
+                    testimonials[secondIndex].classList.add('active');
+                }
+            }
+            
+            // Update dots
+            const dots = document.querySelectorAll('.carousel-dot');
+            dots.forEach((dot, index) => {
+                dot.classList.toggle('active', index === pairIndex);
+            });
+            
+            // Update button states
+            const isMobileMode = window.innerWidth <= 968;
+            const maxPairs = isMobileMode ? totalTestimonials - 1 : Math.ceil(totalTestimonials / 2) - 1;
+            
+            prevBtn.style.opacity = pairIndex === 0 ? '0.5' : '1';
+            prevBtn.style.cursor = pairIndex === 0 ? 'not-allowed' : 'pointer';
+            nextBtn.style.opacity = pairIndex >= maxPairs ? '0.5' : '1';
+            nextBtn.style.cursor = pairIndex >= maxPairs ? 'not-allowed' : 'pointer';
+        }
+        
+        function goToPair(pairIndex) {
+            const isMobile = window.innerWidth <= 968;
+            const maxPairs = isMobile ? totalTestimonials - 1 : Math.ceil(totalTestimonials / 2) - 1;
+            currentPairIndex = Math.max(0, Math.min(pairIndex, maxPairs));
+            showPair(currentPairIndex);
+        }
+        
+        prevBtn.addEventListener('click', () => {
+            if (currentPairIndex > 0) {
+                goToPair(currentPairIndex - 1);
+            }
+        });
+        
+        nextBtn.addEventListener('click', () => {
+            const isMobile = window.innerWidth <= 968;
+            const maxPairs = isMobile ? totalTestimonials - 1 : Math.ceil(totalTestimonials / 2) - 1;
+            if (currentPairIndex < maxPairs) {
+                goToPair(currentPairIndex + 1);
+            }
+        });
+        
+        // Auto-play carousel
+        let autoplayInterval = setInterval(() => {
+            const isMobile = window.innerWidth <= 968;
+            const maxPairs = isMobile ? totalTestimonials - 1 : Math.ceil(totalTestimonials / 2) - 1;
+            
+            if (currentPairIndex < maxPairs) {
+                goToPair(currentPairIndex + 1);
+            } else {
+                goToPair(0);
+            }
+        }, 4000);
+        
+        // Pause autoplay on hover
+        const carouselContainer = document.querySelector('.testimonials-carousel-container');
+        carouselContainer.addEventListener('mouseenter', () => {
+            clearInterval(autoplayInterval);
+        });
+        
+        carouselContainer.addEventListener('mouseleave', () => {
+            autoplayInterval = setInterval(() => {
+                const isMobile = window.innerWidth <= 968;
+                const maxPairs = isMobile ? totalTestimonials - 1 : Math.ceil(totalTestimonials / 2) - 1;
+                
+                if (currentPairIndex < maxPairs) {
+                    goToPair(currentPairIndex + 1);
+                } else {
+                    goToPair(0);
+                }
+            }, 4000);
+        });
+        
+        // Update on window resize
+        window.addEventListener('resize', () => {
+            currentPairIndex = 0;
+            initializeCarousel();
+        });
+        
+        // Initial setup
+        initializeCarousel();
+        
+        // Form Submission
+        const contactForm = document.getElementById('contactForm');
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            const formData = new FormData(contactForm);
+            const data = Object.fromEntries(formData);
+            
+            alert(`¡Gracias ${ data.nombre}! Hemos recibido tu solicitud de ${data.servicio}. Te contactaremos pronto al ${data.telefono}.`);
+            
+            contactForm.reset();
+            
+            // In production, send data to server here
+        });
+        
+        // Set minimum date for date input (today)
+        const today = new Date().toISOString().split('T')[0];
+        document.getElementById('fecha').setAttribute('min', today);
+    </script>
+</body>
+</html>

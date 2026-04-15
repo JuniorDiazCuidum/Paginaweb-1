@@ -49,7 +49,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 4px solid var(--black);
+    border-bottom: 2px solid rgba(162, 155, 254, 0.3);
     backdrop-filter: blur(10px);
     animation: slideDown 1.2s ease-out;
 }
@@ -236,8 +236,9 @@ nav {
     font-family: var(--font-display);
     font-size: clamp(2rem, 5vw, 4.5rem);
     line-height: 0.95;
-    letter-spacing: -0.03em;
+    letter-spacing: 0.08em;
     margin-bottom: 2rem;
+    margin-top: 0;
     animation: fadeInUp 1.5s ease-out 0.2s both;
 }
 
@@ -844,6 +845,76 @@ nav {
     .schedule-grid {
         grid-template-columns: 1fr;
     }
+}
+
+.emergency-contact {
+    margin-top: 1.5rem;
+    padding: 1.5rem;
+    background: var(--white);
+    border-radius: 12px;
+    border: 2px solid var(--mint-dark);
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.emergency-contact::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: var(--mint-dark);
+}
+
+.emergency-icon {
+    width: 48px;
+    height: 48px;
+    min-width: 48px;
+    background: var(--mint-light);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.emergency-contact:hover .emergency-icon {
+    background: var(--mint-dark);
+    transform: scale(1.05);
+}
+
+.emergency-icon svg {
+    stroke: var(--mint-dark);
+    transition: stroke 0.3s ease;
+}
+
+.emergency-contact:hover .emergency-icon svg {
+    stroke: var(--white);
+}
+
+.emergency-info {
+    flex: 1;
+}
+
+.emergency-label {
+    font-size: 0.8rem;
+    color: var(--gray);
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.emergency-number {
+    font-family: var(--font-display);
+    font-size: 1.4rem;
+    color: var(--mint-dark);
+    font-weight: 900;
+    letter-spacing: 0.02em;
 }
 
 .contact-form {

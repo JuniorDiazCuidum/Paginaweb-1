@@ -52,3 +52,10 @@ animacion que al poner el raton encima de cada una de estas aumenten el
 tamaño respecto al resto para destacar, creame un prompt detallado describiendo 
 esta seccion para crearlas con claude code manteniendo el fondo y buscando
 fotos para cada foto de perfil
+
+
+En vista movil la foto de la homepage baja mas la imagen para que no se vea el nuestros 
+servicios, quita el boton de ver demo y todo lo relacion a el. En vista movil en testimonios
+se ven muchos posits y casi parece un scroll infinito cambia el diseño de eso unicamente en 
+vista movil para que no parezca tanto un scroll infinito.
+

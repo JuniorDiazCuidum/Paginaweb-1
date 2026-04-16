@@ -101,6 +101,11 @@
     box-sizing: border-box;
 }
 
+html {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: 'DM Sans', sans-serif;
     color: var(--charcoal);
@@ -108,6 +113,8 @@ body {
     overflow-x: hidden;
     line-height: 1.6;
     position: relative;
+    margin: 0;
+    padding: 0;
 }
 
 body::before {
@@ -2909,6 +2916,11 @@ footer {
     padding: 3.5rem 5% 2rem;
     position: relative;
     z-index: 1;
+    width: 100%;
+    margin: 0;
+    left: 0;
+    right: 0;
+    box-sizing: border-box;
 }
 
 .footer-content {
@@ -3148,7 +3160,7 @@ footer {
         display: flex;
         flex-direction: column;
         padding: 0;
-        min-height: unset;
+        min-height: 95vh;
         gap: 0;
         margin-top: 62px;
         overflow: hidden;
@@ -3157,15 +3169,16 @@ footer {
     /* Image floats to TOP on mobile */
     .hero-visual {
         order: -1;
-        height: 52vw;
-        min-height: 220px;
-        max-height: 300px;
+        height: 48vh;
+        min-height: 320px;
+        max-height: 420px;
         width: 100%;
         position: relative;
         border-radius: 0;
-        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
         overflow: hidden;
         margin: 0;
+        flex-shrink: 0;
     }
 
     .hero-images-grid {
@@ -3200,55 +3213,54 @@ footer {
 
     /* Hero text */
     .hero-content {
-        padding: 2rem 6% 2.8rem;
+        padding: 2rem 6% 3rem;
         text-align: left;
         animation: none;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     .hero-tag {
-        font-size: 0.72rem;
+        font-size: 0.7rem;
         letter-spacing: 1.5px;
         padding: 0.35rem 1rem;
-        margin-bottom: 1.2rem;
+        margin-bottom: 1rem;
         
     }
 
     .hero h1 {
-        font-size: 2.05rem;
+        font-size: 1.95rem;
         line-height: 1.15;
-        margin-bottom: 1rem;
+        margin-bottom: 0.9rem;
         letter-spacing: -0.5px;
     }
 
     .hero p {
-        font-size: 0.9rem;
-        line-height: 1.65;
-        margin-bottom: 1.6rem;
+        font-size: 0.88rem;
+        line-height: 1.6;
+        margin-bottom: 1.4rem;
         max-width: 100%;
         color: #606070;
     }
 
     .hero-cta {
-        flex-direction: column;
+        flex-direction: row;
         gap: 0.75rem;
         justify-content: flex-start;
     }
 
     .hero-cta a {
-        width: 100%;
+        flex: 1;
         text-align: center;
         border-radius: 12px;
     }
 
     .btn-primary {
-        padding: 1rem 2rem;
-        font-size: 0.95rem;
+        padding: 1.1rem 2rem;
+        font-size: 0.98rem;
         box-shadow: 0 6px 18px rgba(161, 179, 24, 0.3);
-    }
-
-    .btn-secondary {
-        padding: 0.9rem 2rem;
-        font-size: 0.95rem;
     }
 
     /* ── SECTION HEADERS ── */
@@ -3362,12 +3374,18 @@ footer {
         gap: 0.6rem;
         padding: 1rem;
         min-height: auto;
+        max-height: none;
     }
 
     .review-card {
         width: 100%;
         max-width: 340px;
         margin: 0 !important;
+    }
+    
+    /* Show only 4 testimonials on mobile to avoid infinite scroll effect */
+    .review-card:nth-child(n+5) {
+        display: none;
     }
     
     /* En mobile, rotar menos para mejor legibilidad */
@@ -3515,6 +3533,8 @@ footer {
 
     footer {
         padding: 3rem 6% 2rem;
+        width: 100%;
+        box-sizing: border-box;
     }
 
     /* ── STATS ── */

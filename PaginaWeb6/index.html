@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Limpy - Servicio Profesional de Limpieza del Hogar</title>
+    <title>Limpy</title>
     <link rel="icon" type="image/png" href="https://limpy.gestoriaencasa.es/images/favicon.png">
     
     <!-- Distinctive Typography -->
@@ -29,8 +29,9 @@
             <ul class="nav-links" id="navLinks">
                 <li><a href="#servicios">Servicios</a></li>
                 <li><a href="#video">Cómo Funciona</a></li>
-                <li><a href="#testimonios">Testimonios</a></li>
                 <li><a href="#precios">Precios</a></li>
+                <li><a href="#testimonios">Testimonios</a></li>
+                <li><a href="#faq">FAQ</a></li>
                 <li><a href="#contacto" class="cta-nav">Reservar Ahora</a></li>
             </ul>
         </div>
@@ -142,8 +143,8 @@
                     <div class="book-page-inner">
                         <div class="book-page-front">
                             <div class="bp-image">
-                                <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=900&q=80" alt="Limpieza Regular">
-                                <div class="bp-overlay" style="background: linear-gradient(to top, rgba(163,179,24,0.5), transparent)"></div>
+                                <img src="https://images.unsplash.com/photo-1585421514738-01798e348b17?w=900&q=80" alt="Limpieza Regular">
+                                <div class="bp-overlay"></div>
                                 <span class="bp-number">02</span>
                                 <div class="bp-spine"></div>
                             </div>
@@ -335,65 +336,6 @@
         </div>
     </section>
 
-    <!-- Testimonials Section -->
-    <section class="testimonials" id="testimonios">
-        <div class="section-header">
-            <div class="section-tag">Testimonios</div>
-            <h2>Lo que dicen nuestros clientes</h2>
-            <p>Miles de hogares confían en nosotros semana tras semana</p>
-        </div>
-        <div class="testimonials-grid">
-            <div class="testimonial-card">
-                <div class="testimonial-header">
-                    <div class="author-avatar">
-                        <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=120&h=120&fit=crop&crop=face" alt="María González">
-                        <span class="verified-badge">
-                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 12l2 2 4-4M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                        </span>
-                    </div>
-                    <div class="author-meta">
-                        <h4>María González</h4>
-                        <p>Madrid · Cliente desde 2024</p>
-                        <div class="stars">★★★★★</div>
-                    </div>
-                </div>
-                <p class="testimonial-text">"¡Increíble servicio! Mi casa nunca había estado tan limpia. El equipo es profesional, puntual y muy cuidadoso con mis cosas. 100% recomendado."</p>
-            </div>
-            <div class="testimonial-card">
-                <div class="testimonial-header">
-                    <div class="author-avatar">
-                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=120&h=120&fit=crop&crop=face" alt="Carlos Ruiz">
-                        <span class="verified-badge">
-                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 12l2 2 4-4M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                        </span>
-                    </div>
-                    <div class="author-meta">
-                        <h4>Carlos Ruiz</h4>
-                        <p>Barcelona · Cliente desde 2023</p>
-                        <div class="stars">★★★★★</div>
-                    </div>
-                </div>
-                <p class="testimonial-text">"Reservar fue súper fácil y el servicio superó mis expectativas. Ahora tengo más tiempo para mi familia. La mejor inversión que he hecho."</p>
-            </div>
-            <div class="testimonial-card">
-                <div class="testimonial-header">
-                    <div class="author-avatar">
-                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=120&h=120&fit=crop&crop=face" alt="Ana Martínez">
-                        <span class="verified-badge">
-                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 12l2 2 4-4M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                        </span>
-                    </div>
-                    <div class="author-meta">
-                        <h4>Ana Martínez</h4>
-                        <p>Sevilla · Cliente desde 2024</p>
-                        <div class="stars">★★★★★</div>
-                    </div>
-                </div>
-                <p class="testimonial-text">"Los productos ecológicos que usan son perfectos para nuestros niños y mascota. Me encanta que cuiden el planeta tanto como mi hogar."</p>
-            </div>
-        </div>
-    </section>
-
     <!-- Pricing Section -->
     <section class="pricing" id="precios">
         <div class="section-header">
@@ -401,51 +343,189 @@
             <h2>Elige el plan perfecto para ti</h2>
             <p>Sin sorpresas, sin cargos ocultos. Garantía de satisfacción incluida</p>
         </div>
+        
+        <!-- Billing Toggle -->
+        <div class="billing-toggle">
+            <span class="billing-label">Pago único</span>
+            <label class="toggle-switch">
+                <input type="checkbox" id="billingToggle">
+                <span class="toggle-slider"></span>
+            </label>
+            <span class="billing-label">Plan mensual</span>
+            <span class="billing-badge">Ahorra 25%</span>
+        </div>
+        
         <div class="pricing-grid">
+            <!-- Basic Plan -->
             <div class="pricing-card">
-                <h3 class="pricing-name">Básico</h3>
-                <p class="pricing-description">Perfecto para mantenimiento regular</p>
-                <div class="pricing-price">49€<span>/visita</span></div>
-                <p class="pricing-period">Servicio único o programado</p>
-                <ul class="pricing-features">
-                    <li class="feature-item">Hasta 80m² de superficie</li>
-                    <li class="feature-item">3 horas de servicio</li>
-                    <li class="feature-item">Productos incluidos</li>
-                    <li class="feature-item">1 profesional certificado</li>
-                    <li class="feature-item">Limpieza estándar</li>
+                <div class="pricing-header">
+                    <h3 class="pricing-name">BÁSICO</h3>
+                    <div class="pricing-price">
+                        <span class="price-single">49€</span>
+                        <span class="price-monthly">39€</span>
+                    </div>
+                    <p class="pricing-subtitle">
+                        <span class="price-subtitle-single">por servicio</span>
+                        <span class="price-subtitle-monthly">al mes</span>
+                    </p>
+                </div>
+                <ul class="pricing-features pricing-features-single">
+                    <li class="feature-item">Perfecto para pisos pequeños</li>
+                    <li class="feature-item">Hasta 2 habitaciones</li>
+                    <li class="feature-item">1 baño incluido</li>
+                    <li class="feature-item">Productos de calidad</li>
+                    <li class="feature-item">2-3 horas de servicio</li>
                 </ul>
-                <button class="btn-pricing">Seleccionar Plan</button>
+                <ul class="pricing-features pricing-features-monthly" style="display: none;">
+                    <li class="feature-item">1 visita semanal</li>
+                    <li class="feature-item">Hasta 2 habitaciones</li>
+                    <li class="feature-item">1 baño incluido</li>
+                    <li class="feature-item">Productos de calidad</li>
+                    <li class="feature-item">Ahorro del 20%</li>
+                </ul>
+                <button class="btn-pricing">Elegir plan</button>
             </div>
+            
+            <!-- Professional Plan (Featured) -->
             <div class="pricing-card featured">
-                <div class="pricing-badge">MÁS POPULAR</div>
-                <h3 class="pricing-name">Premium</h3>
-                <p class="pricing-description">Lo mejor para hogares familiares</p>
-                <div class="pricing-price">89€<span>/visita</span></div>
-                <p class="pricing-period">Ahorra 15% con servicio semanal</p>
-                <ul class="pricing-features">
-                    <li class="feature-item">Hasta 150m² de superficie</li>
-                    <li class="feature-item">5 horas de servicio</li>
-                    <li class="feature-item">Productos ecológicos premium</li>
-                    <li class="feature-item">2 profesionales certificados</li>
+                <div class="pricing-badge">Más popular</div>
+                <div class="pricing-header">
+                    <h3 class="pricing-name">PROFESIONAL</h3>
+                    <div class="pricing-price">
+                        <span class="price-single">89€</span>
+                        <span class="price-monthly">67€</span>
+                    </div>
+                    <p class="pricing-subtitle">
+                        <span class="price-subtitle-single">por servicio</span>
+                        <span class="price-subtitle-monthly">al mes (4 visitas)</span>
+                    </p>
+                </div>
+                <ul class="pricing-features pricing-features-single">
+                    <li class="feature-item">Ideal para hogares familiares</li>
+                    <li class="feature-item">Hasta 4 habitaciones</li>
+                    <li class="feature-item">2 baños incluidos</li>
+                    <li class="feature-item">Productos ecológicos</li>
                     <li class="feature-item">Limpieza profunda</li>
-                    <li class="feature-item">Organización incluida</li>
+                    <li class="feature-item">Servicio de plancha</li>
                 </ul>
-                <button class="btn-pricing">Seleccionar Plan</button>
+                <ul class="pricing-features pricing-features-monthly" style="display: none;">
+                    <li class="feature-item">4 visitas al mes</li>
+                    <li class="feature-item">Hasta 4 habitaciones</li>
+                    <li class="feature-item">2 baños incluidos</li>
+                    <li class="feature-item">Productos ecológicos</li>
+                    <li class="feature-item">Limpieza profunda</li>
+                    <li class="feature-item">Plancha + organización</li>
+                    <li class="feature-item">Ahorro del 25%</li>
+                </ul>
+                <button class="btn-pricing">Elegir plan</button>
             </div>
+            
+            <!-- Enterprise Plan -->
             <div class="pricing-card">
-                <h3 class="pricing-name">Deluxe</h3>
-                <p class="pricing-description">Servicio completo y personalizado</p>
-                <div class="pricing-price">149€<span>/visita</span></div>
-                <p class="pricing-period">Personalizable según necesidades</p>
-                <ul class="pricing-features">
-                    <li class="feature-item">Superficie ilimitada</li>
-                    <li class="feature-item">Tiempo personalizado</li>
-                    <li class="feature-item">Productos de lujo</li>
-                    <li class="feature-item">Equipo completo</li>
-                    <li class="feature-item">Servicios especiales incluidos</li>
-                    <li class="feature-item">Gestor dedicado</li>
+                <div class="pricing-header">
+                    <h3 class="pricing-name">PREMIUM</h3>
+                    <div class="pricing-price">
+                        <span class="price-single">149€</span>
+                        <span class="price-monthly">112€</span>
+                    </div>
+                    <p class="pricing-subtitle">
+                        <span class="price-subtitle-single">por servicio</span>
+                        <span class="price-subtitle-monthly">al mes (4 visitas)</span>
+                    </p>
+                </div>
+                <ul class="pricing-features pricing-features-single">
+                    <li class="feature-item">Perfecto para viviendas grandes</li>
+                    <li class="feature-item">Espacio ilimitado</li>
+                    <li class="feature-item">Todos los baños</li>
+                    <li class="feature-item">Productos premium</li>
+                    <li class="feature-item">Limpieza de ventanas</li>
+                    <li class="feature-item">Plancha y organización</li>
                 </ul>
-                <button class="btn-pricing">Seleccionar Plan</button>
+                <ul class="pricing-features pricing-features-monthly" style="display: none;">
+                    <li class="feature-item">4 visitas al mes</li>
+                    <li class="feature-item">Espacio ilimitado</li>
+                    <li class="feature-item">Todos los baños</li>
+                    <li class="feature-item">Productos premium</li>
+                    <li class="feature-item">Limpieza de ventanas</li>
+                    <li class="feature-item">Plancha + organización</li>
+                    <li class="feature-item">Prioridad en reservas</li>
+                    <li class="feature-item">Ahorro del 25%</li>
+                </ul>
+                <button class="btn-pricing">Elegir plan</button>
+            </div>
+        </div>
+        
+        <!-- Comparison Table -->
+        <div class="pricing-comparison">
+            <h3 class="comparison-title">Compara las características de los planes</h3>
+            <p class="comparison-subtitle">Encuentra el plan perfecto que se adapte a tus necesidades de limpieza</p>
+            
+            <div class="comparison-table">
+                <div class="comparison-row comparison-header">
+                    <div class="comparison-cell feature-name">Características principales</div>
+                    <div class="comparison-cell">Básico</div>
+                    <div class="comparison-cell featured-col">Profesional</div>
+                    <div class="comparison-cell">Premium</div>
+                </div>
+                
+                <div class="comparison-row">
+                    <div class="comparison-cell feature-name">Personal certificado</div>
+                    <div class="comparison-cell">
+                        <svg class="check-icon" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                    <div class="comparison-cell featured-col">
+                        <svg class="check-icon" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                    <div class="comparison-cell">
+                        <svg class="check-icon" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                </div>
+                
+                <div class="comparison-row">
+                    <div class="comparison-cell feature-name">Horario flexible</div>
+                    <div class="comparison-cell">
+                        <svg class="check-icon" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                    <div class="comparison-cell featured-col">
+                        <svg class="check-icon" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                    <div class="comparison-cell">
+                        <svg class="check-icon" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                </div>
+                
+                <div class="comparison-row">
+                    <div class="comparison-cell feature-name">Productos ecológicos</div>
+                    <div class="comparison-cell">—</div>
+                    <div class="comparison-cell featured-col">
+                        <svg class="check-icon" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                    <div class="comparison-cell">
+                        <svg class="check-icon" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                </div>
+                
+                <div class="comparison-row">
+                    <div class="comparison-cell feature-name">Limpieza de cristales</div>
+                    <div class="comparison-cell">—</div>
+                    <div class="comparison-cell featured-col">—</div>
+                    <div class="comparison-cell">
+                        <svg class="check-icon" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                </div>
+                
+                <div class="comparison-row">
+                    <div class="comparison-cell feature-name">Servicio de plancha</div>
+                    <div class="comparison-cell">
+                        <svg class="check-icon" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                    <div class="comparison-cell featured-col">
+                        <svg class="check-icon" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                    <div class="comparison-cell">
+                        <svg class="check-icon" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -550,6 +630,285 @@
         </div>
     </section>
 
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonios">
+        <div class="section-header">
+            <div class="section-tag">Testimonios</div>
+            <h2>Lo que dicen nuestros clientes</h2>
+            <p>Miles de hogares confían en nosotros semana tras semana</p>
+        </div>
+        <div class="testimonials-collage">
+            <!-- Nube de Testimonios - Distribución Orgánica con Flexbox -->
+            
+            <!-- Post-it amarillo -->
+            <article class="review-card postit-style postit-yellow">
+                <div class="postit-pin"></div>
+                <div class="review-stars">★★★★★</div>
+                <p class="review-text">"Excelente servicio. Mi casa nunca había estado tan impecable 🏡"</p>
+                <div class="postit-author">
+                    <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=50&h=50&fit=crop&crop=face" alt="María González">
+                    <span>María G.</span>
+                </div>
+            </article>
+
+            <!-- Post-it verde -->
+            <article class="review-card postit-style postit-green">
+                <div class="postit-pin"></div>
+                <div class="review-stars">★★★★★</div>
+                <p class="review-text">"¡Increíble! Ahora tengo más tiempo para mi familia 👨‍👩‍👧"</p>
+                <div class="postit-author">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=50&h=50&fit=crop&crop=face" alt="Carlos Ruiz">
+                    <span>Carlos R.</span>
+                </div>
+            </article>
+
+            <!-- Post-it azul -->
+            <article class="review-card postit-style postit-blue">
+                <div class="postit-pin"></div>
+                <div class="review-stars">★★★★★</div>
+                <p class="review-text">"Los productos ecológicos son perfectos. Servicio impecable 🌿"</p>
+                <div class="postit-author">
+                    <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=50&h=50&fit=crop&crop=face" alt="Ana Martínez">
+                    <span>Ana M.</span>
+                </div>
+            </article>
+
+            <!-- Post-it rosa -->
+            <article class="review-card postit-style postit-pink">
+                <div class="postit-pin"></div>
+                <div class="review-stars">★★★★★</div>
+                <p class="review-text">"Mejor inversión del año. Mi oficina reluce ✨"</p>
+                <div class="postit-author">
+                    <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=50&h=50&fit=crop&crop=face" alt="Laura">
+                    <span>Laura S.</span>
+                </div>
+            </article>
+
+            <!-- Post-it durazno/peach -->
+            <article class="review-card postit-style postit-peach">
+                <div class="postit-pin"></div>
+                <div class="review-stars">★★★★★</div>
+                <p class="review-text">"Personal súper amable y profesional 😊"</p>
+                <div class="postit-author">
+                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=50&h=50&fit=crop&crop=face" alt="Diego">
+                    <span>Diego F.</span>
+                </div>
+            </article>
+
+            <!-- Post-it menta/mint -->
+            <article class="review-card postit-style postit-mint">
+                <div class="postit-pin"></div>
+                <div class="review-stars">★★★★★</div>
+                <p class="review-text">"Transformaron mi apartamento. Atención al detalle espectacular ⭐"</p>
+                <div class="postit-author">
+                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=50&h=50&fit=crop&crop=face" alt="Elena Torres">
+                    <span>Elena T.</span>
+                </div>
+            </article>
+
+            <!-- Post-it lavanda/lavender -->
+            <article class="review-card postit-style postit-lavender">
+                <div class="postit-pin"></div>
+                <div class="review-stars">★★★★★</div>
+                <p class="review-text">"Sistema de reservas muy fácil. Todo perfecto 👍"</p>
+                <div class="postit-author">
+                    <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=50&h=50&fit=crop&crop=face" alt="Javier">
+                    <span>Javier L.</span>
+                </div>
+            </article>
+
+            <!-- Post-it rosa -->
+            <article class="review-card postit-style postit-pink">
+                <div class="postit-pin"></div>
+                <div class="review-stars">★★★★★</div>
+                <p class="review-text">"Profesionales de verdad. Mi casa siempre perfecta 💚"</p>
+                <div class="postit-author">
+                    <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=50&h=50&fit=crop&crop=face" alt="Isabel Romero">
+                    <span>Isabel R.</span>
+                </div>
+            </article>
+
+            <!-- Post-it crema/cream -->
+            <article class="review-card postit-style postit-cream">
+                <div class="postit-pin"></div>
+                <div class="review-stars">★★★★★</div>
+                <p class="review-text">"La atención al detalle es increíble ✨"</p>
+                <div class="postit-author">
+                    <img src="https://images.unsplash.com/photo-1519345182560-3f2917c472ef?w=50&h=50&fit=crop&crop=face" alt="Roberto Díaz">
+                    <span>Roberto D.</span>
+                </div>
+            </article>
+
+            <!-- Post-it menta/mint -->
+            <article class="review-card postit-style postit-mint">
+                <div class="postit-pin"></div>
+                <div class="review-stars">★★★★★</div>
+                <p class="review-text">"El mejor servicio. Confiables 100% 🙌"</p>
+                <div class="postit-author">
+                    <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=50&h=50&fit=crop&crop=face" alt="Carmen">
+                    <span>Carmen V.</span>
+                </div>
+            </article>
+
+            <!-- Post-it lavanda/lavender -->
+            <article class="review-card postit-style postit-lavender">
+                <div class="postit-pin"></div>
+                <div class="review-stars">★★★★★</div>
+                <p class="review-text">"Mi cocina es mi templo y la cuidan como tal 🙏"</p>
+                <div class="postit-author">
+                    <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=50&h=50&fit=crop&crop=face" alt="Pablo">
+                    <span>Pablo M.</span>
+                </div>
+            </article>
+
+            <!-- Post-it rosa -->
+            <article class="review-card postit-style postit-pink">
+                <div class="postit-pin"></div>
+                <div class="review-stars">★★★★★</div>
+                <p class="review-text">"Un hogar limpio es un hogar feliz 🏠"</p>
+                <div class="postit-author">
+                    <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=80&h=80&fit=crop&crop=face" alt="Sofía Navarro">
+                    <span>Sofía N.</span>
+                </div>
+            </article>
+
+            <!-- Post-it durazno/peach -->
+            <article class="review-card postit-style postit-peach">
+                <div class="postit-pin"></div>
+                <div class="review-stars">★★★★★</div>
+                <p class="review-text">"Puntualidad y profesionalismo 👌"</p>
+                <div class="postit-author">
+                    <img src="https://images.unsplash.com/photo-1542909168-82c3e7fdca5c?w=50&h=50&fit=crop&crop=face" alt="Miguel">
+                    <span>Miguel Á.</span>
+                </div>
+            </article>
+
+            <!-- Post-it crema/cream -->
+            <article class="review-card postit-style postit-cream">
+                <div class="postit-pin"></div>
+                <div class="review-stars">★★★★★</div>
+                <p class="review-text">"Respetan a mis mascotas y usan productos seguros 🐕"</p>
+                <div class="postit-author">
+                    <img src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?w=50&h=50&fit=crop&crop=face" alt="Beatriz Castro">
+                    <span>Beatriz C.</span>
+                </div>
+            </article>
+
+            <!-- Post-it azul -->
+            <article class="review-card postit-style postit-blue">
+                <div class="postit-pin"></div>
+                <div class="review-stars">★★★★★</div>
+                <p class="review-text">"El plan mensual me ahorra tiempo y dinero 💚"</p>
+                <div class="postit-author">
+                    <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=50&h=50&fit=crop&crop=face" alt="Patricia">
+                    <span>Patricia H.</span>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section" id="faq">
+        <div class="faq-container">
+            <div class="section-header">
+                <div class="section-tag">Preguntas Frecuentes</div>
+                <h2>¿Tienes dudas? Te ayudamos</h2>
+                <p>Encuentra respuestas a las preguntas más comunes sobre nuestros servicios de limpieza profesional</p>
+            </div>
+            
+            <div class="faq-grid">
+                <div class="faq-visual">
+                    <div class="faq-visual-card">
+                        <div class="faq-icon-large">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/>
+                                <path d="M12 16V12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                                <circle cx="12" cy="8" r="0.5" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <h3>¿Necesitas más información?</h3>
+                        <p>Nuestro equipo está disponible para resolver cualquier duda adicional</p>
+                        <a href="#contacto" class="faq-contact-btn">Contáctanos</a>
+                    </div>
+                </div>
+                
+                <div class="faq-accordion">
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>¿Cómo puedo reservar un servicio?</span>
+                            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19 9L12 16L5 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Reservar es muy sencillo. Puedes hacerlo desde nuestro formulario de contacto, por teléfono, o directamente desde el botón "Reservar Ahora". Selecciona el tipo de servicio, fecha y hora, y te confirmaremos la disponibilidad en minutos.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>¿Qué incluye el servicio de limpieza profunda?</span>
+                            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19 9L12 16L5 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Nuestro servicio de limpieza profunda incluye: limpieza detallada de ventanas y marcos, desinfección completa de baños y cocina, limpieza de electrodomésticos por dentro y fuera, aspirado y fregado de todas las superficies, limpieza de alturas y rincones difíciles.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>¿Debo estar en casa durante el servicio?</span>
+                            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19 9L12 16L5 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>No es necesario. Muchos de nuestros clientes nos confían las llaves de su hogar. Todo nuestro personal está certificado, asegurado y ha pasado rigurosas verificaciones de seguridad. Si lo prefieres, también puedes estar presente durante el servicio.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>¿Qué productos de limpieza utilizan?</span>
+                            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19 9L12 16L5 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Utilizamos productos de limpieza premium, ecológicos y seguros para toda la familia, incluyendo niños y mascotas. Son biodegradables, libres de químicos agresivos y certificados por organizaciones ambientales. Si tienes preferencias específicas, podemos adaptarnos.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>¿Puedo cancelar o reprogramar mi reserva?</span>
+                            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19 9L12 16L5 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Sí, puedes cancelar o reprogramar tu servicio con al menos 24 horas de anticipación sin ningún cargo. Para cambios de último momento, contáctanos y haremos nuestro mejor esfuerzo por adaptarnos a tu nueva disponibilidad.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>¿Ofrecen garantía de satisfacción?</span>
+                            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19 9L12 16L5 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>¡Absolutamente! Garantizamos tu satisfacción al 100%. Si algo no cumple con tus expectativas, regresamos en las siguientes 24 horas para corregirlo sin costo adicional. Tu tranquilidad es nuestra prioridad.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer>
         <div class="footer-content">
@@ -583,7 +942,7 @@
                     <li><a href="#">Privacidad</a></li>
                     <li><a href="#">Términos</a></li>
                     <li><a href="#">Cookies</a></li>
-                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#faq">FAQ</a></li>
                 </ul>
             </div>
         </div>
@@ -657,68 +1016,100 @@
             });
         }, observerOptions);
 
-        document.querySelectorAll('.testimonial-card, .pricing-card').forEach(el => {
+        document.querySelectorAll('.pricing-card').forEach(el => {
             observer.observe(el);
         });
 
-        // ── Book Page-Flip carousel ──
+        // ── Stack Carousel con transición automática ──
         (function() {
             const pages = Array.from(document.querySelectorAll('.book-page'));
             const dots  = Array.from(document.querySelectorAll('.book-dot'));
             let current = 0;
             let animating = false;
+            let autoplayInterval;
 
-            function goTo(next, direction) {
-                if (animating || next === current) return;
-                animating = true;
+            function updateStack() {
+                pages.forEach((page, i) => {
+                    page.classList.remove('active', 'stack-1', 'stack-2');
+                    
+                    if (i === current) {
+                        page.classList.add('active');
+                    } else if (i === (current - 1 + pages.length) % pages.length) {
+                        page.classList.add('stack-1');
+                    } else if (i === (current + 1) % pages.length) {
+                        page.classList.add('stack-2');
+                    }
+                });
 
-                const outClass   = direction === 'next' ? 'exit-left'  : 'exit-right';
-                const inClass    = direction === 'next' ? 'enter-right' : 'enter-left';
-                const outPage    = pages[current];
-                const inPage     = pages[next];
-
-                outPage.classList.add(outClass);
-                inPage.classList.add(inClass);
-                inPage.classList.add('active');
-
-                dots[current].classList.remove('active');
-                dots[next].classList.add('active');
-
-                const duration = 620;
-                setTimeout(() => {
-                    outPage.classList.remove('active', outClass);
-                    inPage.classList.remove(inClass);
-                    current = next;
-                    animating = false;
-                }, duration);
+                dots.forEach((dot, i) => {
+                    dot.classList.toggle('active', i === current);
+                });
             }
 
+            function goNext() {
+                if (animating) return;
+                animating = true;
+                current = (current + 1) % pages.length;
+                updateStack();
+                setTimeout(() => { animating = false; }, 600);
+            }
+
+            function goPrev() {
+                if (animating) return;
+                animating = true;
+                current = (current - 1 + pages.length) % pages.length;
+                updateStack();
+                setTimeout(() => { animating = false; }, 600);
+            }
+
+            function startAutoplay() {
+                autoplayInterval = setInterval(goNext, 4000);
+            }
+
+            function stopAutoplay() {
+                clearInterval(autoplayInterval);
+            }
+
+            // Inicializar stack
+            updateStack();
+            startAutoplay();
+
+            // Controles manuales
             document.getElementById('bookNext').addEventListener('click', () => {
-                goTo((current + 1) % pages.length, 'next');
+                stopAutoplay();
+                goNext();
+                startAutoplay();
             });
 
             document.getElementById('bookPrev').addEventListener('click', () => {
-                goTo((current - 1 + pages.length) % pages.length, 'prev');
+                stopAutoplay();
+                goPrev();
+                startAutoplay();
             });
 
             dots.forEach((dot, i) => {
                 dot.addEventListener('click', () => {
-                    goTo(i, i > current ? 'next' : 'prev');
+                    stopAutoplay();
+                    current = i;
+                    updateStack();
+                    startAutoplay();
                 });
             });
 
-            // Touch swipe support
+            // Touch swipe
             let touchStartX = 0;
             const stage = document.getElementById('bookStage');
-            stage.addEventListener('touchstart', e => { touchStartX = e.touches[0].clientX; }, { passive: true });
+            stage.addEventListener('touchstart', e => { 
+                touchStartX = e.touches[0].clientX; 
+                stopAutoplay();
+            }, { passive: true });
+            
             stage.addEventListener('touchend', e => {
                 const diff = touchStartX - e.changedTouches[0].clientX;
-                if (Math.abs(diff) > 50) goTo(
-                    diff > 0
-                        ? (current + 1) % pages.length
-                        : (current - 1 + pages.length) % pages.length,
-                    diff > 0 ? 'next' : 'prev'
-                );
+                if (Math.abs(diff) > 50) {
+                    if (diff > 0) goNext(); else goPrev();
+                }
+                startAutoplay();
             });
         })();
         const form = document.getElementById('contactForm');
@@ -777,6 +1168,57 @@
         
         // Auto-advance every 4 seconds
         setInterval(nextSlide, 4000);
+
+        // FAQ Accordion
+        const faqQuestions = document.querySelectorAll('.faq-question');
+        
+        faqQuestions.forEach(question => {
+            question.addEventListener('click', () => {
+                const faqItem = question.parentElement;
+                const isActive = faqItem.classList.contains('active');
+                
+                // Close all FAQ items
+                document.querySelectorAll('.faq-item').forEach(item => {
+                    item.classList.remove('active');
+                    item.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+                });
+                
+                // Toggle current item
+                if (!isActive) {
+                    faqItem.classList.add('active');
+                    question.setAttribute('aria-expanded', 'true');
+                }
+            });
+        });
+
+        // Pricing Toggle
+        const billingToggle = document.getElementById('billingToggle');
+        const priceSingles = document.querySelectorAll('.price-single');
+        const pricesMonthlies = document.querySelectorAll('.price-monthly');
+        const subtitleSingles = document.querySelectorAll('.price-subtitle-single');
+        const subtitleMonthlies = document.querySelectorAll('.price-subtitle-monthly');
+        const featuresSingles = document.querySelectorAll('.pricing-features-single');
+        const featuresMonthlies = document.querySelectorAll('.pricing-features-monthly');
+        
+        billingToggle.addEventListener('change', function() {
+            if (this.checked) {
+                // Show monthly prices, subtitles and features
+                priceSingles.forEach(price => price.style.display = 'none');
+                pricesMonthlies.forEach(price => price.style.display = 'inline');
+                subtitleSingles.forEach(subtitle => subtitle.style.display = 'none');
+                subtitleMonthlies.forEach(subtitle => subtitle.style.display = 'inline');
+                featuresSingles.forEach(features => features.style.display = 'none');
+                featuresMonthlies.forEach(features => features.style.display = 'block');
+            } else {
+                // Show single prices, subtitles and features
+                priceSingles.forEach(price => price.style.display = 'inline');
+                pricesMonthlies.forEach(price => price.style.display = 'none');
+                subtitleSingles.forEach(subtitle => subtitle.style.display = 'inline');
+                subtitleMonthlies.forEach(subtitle => subtitle.style.display = 'none');
+                featuresSingles.forEach(features => features.style.display = 'block');
+                featuresMonthlies.forEach(features => features.style.display = 'none');
+            }
+        });
     </script>
 </body>
 </html>

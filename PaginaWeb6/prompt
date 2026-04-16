@@ -36,6 +36,19 @@ moderno para una empresa de limpieza del hogar con cuadrícula de servicios,
 sección principal, botón de reserva y páginas de servicios detalladas. 
 Utilice un diseño limpio y elementos visuales equilibrados.
 
-y utiliza la imagen y el favicon favicon: https://limpy.gestoriaencasa.es/images/favicon.png
+y utiliza la imagen y el favicon 
+
+favicon: https://limpy.gestoriaencasa.es/images/favicon.png
 
 logo: https://limpy.gestoriaencasa.es/_next/image/?url=/images/logos/logo-blue.webp&w=256&q=75
+
+
+
+
+quiero que la seccion de testimonios me crees muchos mas comentarios, y que 
+los comentarios se deben de superponerse un poco unas sobre otras
+y aparecer con ese estilo que aprecen recortes de periodicos ademas de incluir
+animacion que al poner el raton encima de cada una de estas aumenten el 
+tamaño respecto al resto para destacar, creame un prompt detallado describiendo 
+esta seccion para crearlas con claude code manteniendo el fondo y buscando
+fotos para cada foto de perfil

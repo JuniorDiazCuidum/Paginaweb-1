@@ -1,0 +1,1103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Limpy</title>
+    <link rel="icon" type="image/png" href="https://limpy.gestoriaencasa.es/images/favicon.png">
+    
+    <!-- Distinctive Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="logo">
+                <img src="https://limpy.gestoriaencasa.es/_next/image/?url=/images/logos/logo-blue.webp&w=256&q=75" alt="Limpy Logo">
+            </a>
+            <input type="checkbox" id="menuToggle" class="menu-checkbox" aria-label="Toggle menu">
+            <label for="menuToggle" class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#video">Cómo Funciona</a></li>
+                <li><a href="#precios">Precios</a></li>
+                <li><a href="#testimonios">Testimonios</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contacto" class="cta-nav">Reservar Ahora</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <span class="hero-tag">Líder en Limpieza Profesional</span>
+            <h1>Tu hogar <span class="highlight">impecable</span>, tu tiempo <span class="highlight">liberado</span></h1>
+            <p>Servicio de limpieza profesional del hogar con personal certificado, productos ecológicos y satisfacción garantizada. Reserva en minutos.</p>
+            <div class="hero-cta">
+                <a href="#contacto" class="btn-primary">Reservar Servicio</a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <!-- Decorative shapes -->
+            <div class="hero-shape shape-1"></div>
+            <div class="hero-shape shape-2"></div>
+            <div class="hero-shape shape-3"></div>
+            
+            <!-- Image composition -->
+            <div class="hero-images-grid">
+                <div class="hero-img-card main-card">
+                    <img src="https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?w=600&q=80" alt="Hogar limpio y ordenado">
+                </div>
+                <div class="hero-img-card accent-card">
+                    <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=400&q=80" alt="Limpieza profesional">
+                </div>
+                <div class="hero-img-card small-card">
+                    <img src="https://images.unsplash.com/photo-1628177142898-93e36e4e3a50?w=300&q=80" alt="Productos de limpieza">
+                </div>
+            </div>
+            
+            <!-- Floating stats -->
+            <div class="hero-float-stat stat-1">
+                <div class="stat-icon">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" fill="#A1B318" stroke="#A1B318" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div class="stat-text">
+                    <strong>98%</strong>
+                    <span>Satisfacción</span>
+                </div>
+            </div>
+            <div class="hero-float-stat stat-2">
+                <div class="stat-icon">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 21V19C20 17.9391 19.5786 16.9217 18.8284 16.1716C18.0783 15.4214 17.0609 15 16 15H8C6.93913 15 5.92172 15.4214 5.17157 16.1716C4.42143 16.9217 4 17.9391 4 19V21" stroke="#6366F1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 11C14.2091 11 16 9.20914 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 11 12 11Z" stroke="#6366F1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div class="stat-text">
+                    <strong>2500+</strong>
+                    <span>Clientes</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section - Magazine Layout -->
+    <section class="services" id="servicios">
+        <div class="section-header">
+            <div class="section-tag">Nuestros Servicios</div>
+            <h2>Soluciones de limpieza para cada necesidad</h2>
+            <p>Desde limpieza profunda hasta mantenimiento regular, tenemos el servicio perfecto para tu hogar</p>
+        </div>
+
+        <div class="svc-stage" id="svcStage">
+
+                <!-- Card 1: Limpieza Profunda -->
+                <div class="svc-card active" data-index="0">
+                    <div class="svc-card-img">
+                        <img src="https://images.unsplash.com/photo-1628177142898-93e36e4e3a50?w=700&q=80" alt="Limpieza Profunda">
+                    </div>
+                    <div class="svc-card-body">
+                        <span class="svc-badge">Servicio Esencial</span>
+                        <h3 class="svc-title">Limpieza Profunda</h3>
+                        <p class="svc-desc">Limpieza exhaustiva de cada rincón: ventanas, baños, cocina, electrodomésticos y alturas. Perfecto para mudanzas o limpieza estacional.</p>
+                    </div>
+                </div>
+
+                <!-- Card 2: Limpieza Regular -->
+                <div class="svc-card stack-right" data-index="1">
+                    <div class="svc-card-img">
+                        <img src="https://images.unsplash.com/photo-1585421514738-01798e348b17?w=700&q=80" alt="Limpieza Regular">
+                    </div>
+                    <div class="svc-card-body">
+                        <span class="svc-badge">Suscripción</span>
+                        <h3 class="svc-title">Limpieza Regular</h3>
+                        <p class="svc-desc">Mantenimiento semanal o quincenal para que tu hogar esté siempre impecable. Descuentos exclusivos por suscripción continua.</p>
+                    </div>
+                </div>
+
+                <!-- Card 3: Limpieza Ecológica Premium -->
+                <div class="svc-card stack-left" data-index="2">
+                    <div class="svc-card-img">
+                        <img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?w=700&q=80" alt="Limpieza Ecológica Premium">
+                    </div>
+                    <div class="svc-card-body">
+                        <span class="svc-badge svc-badge--purple">★ Premium Eco</span>
+                        <h3 class="svc-title">Limpieza Ecológica</h3>
+                        <p class="svc-desc">Productos 100% biodegradables certificados ISO 14001. Sin químicos tóxicos, seguro para niños y mascotas.</p>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose">
+        <div class="why-choose-grid">
+            <div class="why-carousel">
+                <div class="carousel-track">
+                    <div class="carousel-slide active">
+                        <img src="https://images.unsplash.com/photo-1581578949510-fa7315c4c350?w=800&q=80" alt="Equipo profesional de limpieza">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://images.unsplash.com/photo-1628177142898-93e36e4e3a50?w=800&q=80" alt="Limpieza profesional en acción">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?w=800&q=80" alt="Productos ecológicos">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?w=800&q=80" alt="Hogar limpio y ordenado">
+                    </div>
+                </div>
+                <div class="carousel-indicators">
+                    <span class="indicator active" data-slide="0"></span>
+                    <span class="indicator" data-slide="1"></span>
+                    <span class="indicator" data-slide="2"></span>
+                    <span class="indicator" data-slide="3"></span>
+                </div>
+            </div>
+            <div class="why-content">
+                <div class="section-tag">¿Por Qué Elegirnos?</div>
+                <h2>La excelencia en cada detalle</h2>
+                <p>No somos solo un servicio de limpieza. Somos tu aliado para un hogar perfecto y más tiempo para lo que realmente importa.</p>
+                <div class="why-features">
+                    <div class="why-feature">
+                        <div class="why-feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="why-feature-content">
+                            <h3>Personal Certificado</h3>
+                            <p>Todo nuestro equipo está formado, certificado y asegurado. Profesionales de confianza que cuidan tu hogar como si fuera suyo.</p>
+                        </div>
+                    </div>
+                    <div class="why-feature">
+                        <div class="why-feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 8V12L15 15M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="why-feature-content">
+                            <h3>Puntualidad Garantizada</h3>
+                            <p>Llegamos siempre a tiempo. Tu tiempo es valioso y respetamos cada minuto de tu agenda.</p>
+                        </div>
+                    </div>
+                    <div class="why-feature">
+                        <div class="why-feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="why-feature-content">
+                            <h3>Productos Premium</h3>
+                            <p>Utilizamos productos de la más alta calidad, ecológicos y seguros para toda la familia.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Transform Section -->
+    <section class="transform-section" id="video">
+        <div class="transform-container">
+            <div class="transform-content">
+                <div class="section-tag light">Transformación Total</div>
+                <h2>Mira cómo transformamos tu hogar</h2>
+                <p class="transform-subtitle">Cada servicio es una experiencia diseñada para superar tus expectativas. Profesionalismo, atención al detalle y resultados que hablan por sí mismos.</p>
+                
+                <div class="transform-steps">
+                    <div class="transform-step">
+                        <div class="step-number">01</div>
+                        <div class="step-content">
+                            <h3>Reserva Online</h3>
+                            <p>Elige fecha y hora en minutos desde tu móvil o ordenador</p>
+                        </div>
+                    </div>
+                    <div class="transform-step">
+                        <div class="step-number">02</div>
+                        <div class="step-content">
+                            <h3>Equipo Certificado</h3>
+                            <p>Llega puntual con productos premium y equipamiento profesional</p>
+                        </div>
+                    </div>
+                    <div class="transform-step">
+                        <div class="step-number">03</div>
+                        <div class="step-content">
+                            <h3>Hogar Impecable</h3>
+                            <p>Disfruta de un espacio brillante y más tiempo para ti</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="transform-cta">
+                    <a href="#contacto" class="btn-transform">Comenzar Ahora</a>
+                    <div class="transform-trust">
+                        <span class="trust-badge">✓</span>
+                        <p>Satisfacción garantizada o te devolvemos tu dinero</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="transform-visual">
+                <div class="visual-grid">
+                    <div class="visual-card main">
+                        <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=800&q=80" alt="Transformación del hogar">
+                    </div>
+                    <div class="visual-card accent">
+                        <img src="https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?w=400&q=80" alt="Limpieza profesional">
+                    </div>
+                    <div class="visual-card accent">
+                        <img src="https://images.unsplash.com/photo-1628177142898-93e36e4e3a50?w=400&q=80" alt="Equipo de limpieza">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing" id="precios">
+        <div class="section-header">
+            <div class="section-tag">Precios Transparentes</div>
+            <h2>Elige el plan perfecto para ti</h2>
+            <p>Sin sorpresas, sin cargos ocultos. Garantía de satisfacción incluida</p>
+        </div>
+        
+        <!-- Billing Toggle -->
+        <div class="billing-toggle">
+            <span class="billing-label">Pago único</span>
+            <label class="toggle-switch">
+                <input type="checkbox" id="billingToggle">
+                <span class="toggle-slider"></span>
+            </label>
+            <span class="billing-label">Plan mensual</span>
+            <span class="billing-badge">Ahorra 25%</span>
+        </div>
+        
+        <div class="pricing-grid">
+            <!-- Basic Plan -->
+            <div class="pricing-card">
+                <div class="pricing-header">
+                    <h3 class="pricing-name">BÁSICO</h3>
+                    <div class="pricing-price">
+                        <span class="price-single">49€</span>
+                        <span class="price-monthly">39€</span>
+                    </div>
+                    <p class="pricing-subtitle">
+                        <span class="price-subtitle-single">por servicio</span>
+                        <span class="price-subtitle-monthly">al mes</span>
+                    </p>
+                </div>
+                <ul class="pricing-features pricing-features-single">
+                    <li class="feature-item">Perfecto para pisos pequeños</li>
+                    <li class="feature-item">Hasta 2 habitaciones</li>
+                    <li class="feature-item">1 baño incluido</li>
+                    <li class="feature-item">Productos de calidad</li>
+                    <li class="feature-item">2-3 horas de servicio</li>
+                </ul>
+                <ul class="pricing-features pricing-features-monthly" style="display: none;">
+                    <li class="feature-item">1 visita semanal</li>
+                    <li class="feature-item">Hasta 2 habitaciones</li>
+                    <li class="feature-item">1 baño incluido</li>
+                    <li class="feature-item">Productos de calidad</li>
+                    <li class="feature-item">Ahorro del 20%</li>
+                </ul>
+                <button class="btn-pricing">Elegir plan</button>
+            </div>
+            
+            <!-- Professional Plan (Featured) -->
+            <div class="pricing-card featured">
+                <div class="pricing-badge">Más popular</div>
+                <div class="pricing-header">
+                    <h3 class="pricing-name">PROFESIONAL</h3>
+                    <div class="pricing-price">
+                        <span class="price-single">89€</span>
+                        <span class="price-monthly">67€</span>
+                    </div>
+                    <p class="pricing-subtitle">
+                        <span class="price-subtitle-single">por servicio</span>
+                        <span class="price-subtitle-monthly">al mes (4 visitas)</span>
+                    </p>
+                </div>
+                <ul class="pricing-features pricing-features-single">
+                    <li class="feature-item">Ideal para hogares familiares</li>
+                    <li class="feature-item">Hasta 4 habitaciones</li>
+                    <li class="feature-item">2 baños incluidos</li>
+                    <li class="feature-item">Productos ecológicos</li>
+                    <li class="feature-item">Limpieza profunda</li>
+                    <li class="feature-item">Servicio de plancha</li>
+                </ul>
+                <ul class="pricing-features pricing-features-monthly" style="display: none;">
+                    <li class="feature-item">4 visitas al mes</li>
+                    <li class="feature-item">Hasta 4 habitaciones</li>
+                    <li class="feature-item">2 baños incluidos</li>
+                    <li class="feature-item">Productos ecológicos</li>
+                    <li class="feature-item">Limpieza profunda</li>
+                    <li class="feature-item">Plancha + organización</li>
+                    <li class="feature-item">Ahorro del 25%</li>
+                </ul>
+                <button class="btn-pricing">Elegir plan</button>
+            </div>
+            
+            <!-- Enterprise Plan -->
+            <div class="pricing-card">
+                <div class="pricing-header">
+                    <h3 class="pricing-name">PREMIUM</h3>
+                    <div class="pricing-price">
+                        <span class="price-single">149€</span>
+                        <span class="price-monthly">112€</span>
+                    </div>
+                    <p class="pricing-subtitle">
+                        <span class="price-subtitle-single">por servicio</span>
+                        <span class="price-subtitle-monthly">al mes (4 visitas)</span>
+                    </p>
+                </div>
+                <ul class="pricing-features pricing-features-single">
+                    <li class="feature-item">Perfecto para viviendas grandes</li>
+                    <li class="feature-item">Espacio ilimitado</li>
+                    <li class="feature-item">Todos los baños</li>
+                    <li class="feature-item">Productos premium</li>
+                    <li class="feature-item">Limpieza de ventanas</li>
+                    <li class="feature-item">Plancha y organización</li>
+                </ul>
+                <ul class="pricing-features pricing-features-monthly" style="display: none;">
+                    <li class="feature-item">4 visitas al mes</li>
+                    <li class="feature-item">Espacio ilimitado</li>
+                    <li class="feature-item">Todos los baños</li>
+                    <li class="feature-item">Productos premium</li>
+                    <li class="feature-item">Limpieza de ventanas</li>
+                    <li class="feature-item">Plancha + organización</li>
+                    <li class="feature-item">Prioridad en reservas</li>
+                    <li class="feature-item">Ahorro del 25%</li>
+                </ul>
+                <button class="btn-pricing">Elegir plan</button>
+            </div>
+        </div>
+        
+        <!-- Comparison Table -->
+        <div class="pricing-comparison">
+            <h3 class="comparison-title">Compara las características de los planes</h3>
+            <p class="comparison-subtitle">Encuentra el plan perfecto que se adapte a tus necesidades de limpieza</p>
+            
+            <div class="comparison-table">
+                <div class="comparison-row comparison-header">
+                    <div class="comparison-cell feature-name">Características principales</div>
+                    <div class="comparison-cell">Básico</div>
+                    <div class="comparison-cell featured-col">Profesional</div>
+                    <div class="comparison-cell">Premium</div>
+                </div>
+                
+                <div class="comparison-row">
+                    <div class="comparison-cell feature-name">Personal certificado</div>
+                    <div class="comparison-cell">
+                        <svg class="check-icon" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                    <div class="comparison-cell featured-col">
+                        <svg class="check-icon" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                    <div class="comparison-cell">
+                        <svg class="check-icon" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                </div>
+                
+                <div class="comparison-row">
+                    <div class="comparison-cell feature-name">Horario flexible</div>
+                    <div class="comparison-cell">
+                        <svg class="check-icon" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                    <div class="comparison-cell featured-col">
+                        <svg class="check-icon" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                    <div class="comparison-cell">
+                        <svg class="check-icon" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                </div>
+                
+                <div class="comparison-row">
+                    <div class="comparison-cell feature-name">Productos ecológicos</div>
+                    <div class="comparison-cell">—</div>
+                    <div class="comparison-cell featured-col">
+                        <svg class="check-icon" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                    <div class="comparison-cell">
+                        <svg class="check-icon" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                </div>
+                
+                <div class="comparison-row">
+                    <div class="comparison-cell feature-name">Limpieza de cristales</div>
+                    <div class="comparison-cell">—</div>
+                    <div class="comparison-cell featured-col">—</div>
+                    <div class="comparison-cell">
+                        <svg class="check-icon" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                </div>
+                
+                <div class="comparison-row">
+                    <div class="comparison-cell feature-name">Servicio de plancha</div>
+                    <div class="comparison-cell">
+                        <svg class="check-icon" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                    <div class="comparison-cell featured-col">
+                        <svg class="check-icon" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                    <div class="comparison-cell">
+                        <svg class="check-icon" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contacto">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>Reserva tu servicio hoy</h2>
+                <p>Completa el formulario y nos pondremos en contacto contigo en menos de 24 horas para confirmar tu reserva.</p>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22 16.92V19.92C22.0011 20.1985 21.9441 20.4742 21.8325 20.7293C21.7209 20.9845 21.5573 21.2136 21.3521 21.4019C21.1469 21.5901 20.9046 21.7335 20.6407 21.8227C20.3769 21.9119 20.0974 21.9451 19.82 21.92C16.7428 21.5856 13.787 20.5341 11.19 18.85C8.77382 17.3147 6.72533 15.2662 5.18999 12.85C3.49997 10.2412 2.44824 7.27099 2.11999 4.18C2.095 3.90347 2.12787 3.62476 2.21649 3.36162C2.30512 3.09849 2.44756 2.85669 2.63476 2.65162C2.82196 2.44655 3.0498 2.28271 3.30379 2.17052C3.55777 2.05833 3.83233 2.00026 4.10999 2H7.10999C7.5953 1.99522 8.06579 2.16708 8.43376 2.48353C8.80173 2.79999 9.04207 3.23945 9.10999 3.72C9.23662 4.68007 9.47144 5.62273 9.80999 6.53C9.94454 6.88792 9.97366 7.27691 9.8939 7.65088C9.81415 8.02485 9.62886 8.36811 9.35999 8.64L8.08999 9.91C9.51355 12.4135 11.5864 14.4864 14.09 15.91L15.36 14.64C15.6319 14.3711 15.9751 14.1858 16.3491 14.1061C16.7231 14.0263 17.1121 14.0555 17.47 14.19C18.3773 14.5286 19.3199 14.7634 20.28 14.89C20.7658 14.9585 21.2094 15.2032 21.5265 15.5775C21.8437 15.9518 22.0122 16.4296 22 16.92Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="contact-text">
+                            <h3>LLÁMENOS</h3>
+                            <p>1 (234) 567-891, 1 (234) 987-654</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon email-icon">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 12L3 7L12 2L21 7L12 12Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M3 17L12 22L21 17" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M3 12L12 17L21 12" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="contact-text">
+                            <h3>UBICACIÓN</h3>
+                            <p>121 Rock Street, 21 Avenue, Nueva York, NY 92103-9000</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon schedule-icon">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="12" cy="12" r="10" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 6V12L16 14" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="contact-text">
+                            <h3>HORAS DE TRABAJO</h3>
+                            <div class="schedule-grid">
+                                <span class="schedule-day">Lun – Vie</span>
+                                <span class="schedule-time">8:00 am – 8:00 pm</span>
+                                <span class="schedule-day">Sábado</span>
+                                <span class="schedule-time">9:00 am – 4:00 pm</span>
+                                <span class="schedule-day">Domingo</span>
+                                <span class="schedule-time closed">Cerrado</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form">
+                <div class="form-decorator top-left"></div>
+                <div class="form-decorator bottom-right"></div>
+                <form id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+                            <span class="form-error">Por favor, introduce tu nombre</span>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="Tu teléfono">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
+                        <span class="form-error">Por favor, introduce un email válido</span>
+                    </div>
+                    <div class="form-group">
+                        <select id="service" name="service" required>
+                            <option value="" disabled selected>Servicio de interés</option>
+                            <option value="limpieza-profunda">Limpieza Profunda</option>
+                            <option value="limpieza-regular">Limpieza Regular</option>
+                            <option value="limpieza-ecologica">Limpieza Ecológica</option>
+                            <option value="consulta">Consulta Personalizada</option>
+                        </select>
+                        <span class="form-error">Por favor, selecciona un servicio</span>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="4" placeholder="Cuéntanos sobre tus necesidades..."></textarea>
+                    </div>
+                    <div class="form-checkbox">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <label for="terms">I accept the <a href="#" class="terms-link">TÉRMINOS DE SERVICIO</a></label>
+                    </div>
+                    <button type="submit" class="btn-submit">
+                        <span>ENTREGAR</span>
+                        <svg class="submit-arrow" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="form-success">¡Gracias! Tu solicitud ha sido enviada. Te contactaremos pronto.</div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonios">
+        <div class="section-header">
+            <div class="section-tag">Testimonios</div>
+            <h2>Lo que dicen nuestros clientes</h2>
+            <p>Miles de hogares confían en nosotros semana tras semana</p>
+        </div>
+        <div class="testimonials-collage">
+            <!-- Nube de Testimonios - Distribución Orgánica con Flexbox -->
+            
+            <!-- Post-it amarillo -->
+            <article class="review-card postit-style postit-yellow">
+                <div class="postit-pin"></div>
+                <div class="review-stars">★★★★★</div>
+                <p class="review-text">"Excelente servicio. Mi casa nunca había estado tan impecable 🏡"</p>
+                <div class="postit-author">
+                    <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=50&h=50&fit=crop&crop=face" alt="María González">
+                    <span>María G.</span>
+                </div>
+            </article>
+
+            <!-- Post-it verde -->
+            <article class="review-card postit-style postit-green">
+                <div class="postit-pin"></div>
+                <div class="review-stars">★★★★★</div>
+                <p class="review-text">"¡Increíble! Ahora tengo más tiempo para mi familia 👨‍👩‍👧"</p>
+                <div class="postit-author">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=50&h=50&fit=crop&crop=face" alt="Carlos Ruiz">
+                    <span>Carlos R.</span>
+                </div>
+            </article>
+
+            <!-- Post-it azul -->
+            <article class="review-card postit-style postit-blue">
+                <div class="postit-pin"></div>
+                <div class="review-stars">★★★★★</div>
+                <p class="review-text">"Los productos ecológicos son perfectos. Servicio impecable 🌿"</p>
+                <div class="postit-author">
+                    <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=50&h=50&fit=crop&crop=face" alt="Ana Martínez">
+                    <span>Ana M.</span>
+                </div>
+            </article>
+
+            <!-- Post-it rosa -->
+            <article class="review-card postit-style postit-pink">
+                <div class="postit-pin"></div>
+                <div class="review-stars">★★★★★</div>
+                <p class="review-text">"Mejor inversión del año. Mi oficina reluce ✨"</p>
+                <div class="postit-author">
+                    <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=50&h=50&fit=crop&crop=face" alt="Laura">
+                    <span>Laura S.</span>
+                </div>
+            </article>
+
+            <!-- Post-it crema/cream -->
+            <article class="review-card postit-style postit-cream">
+                <div class="postit-pin"></div>
+                <div class="review-stars">★★★★★</div>
+                <p class="review-text">"La atención al detalle es increíble ✨"</p>
+                <div class="postit-author">
+                    <img src="https://images.unsplash.com/photo-1519345182560-3f2917c472ef?w=50&h=50&fit=crop&crop=face" alt="Roberto Díaz">
+                    <span>Roberto D.</span>
+                </div>
+            </article>
+
+            <!-- Post-it menta/mint -->
+            <article class="review-card postit-style postit-mint">
+                <div class="postit-pin"></div>
+                <div class="review-stars">★★★★★</div>
+                <p class="review-text">"El mejor servicio. Confiables 100% 🙌"</p>
+                <div class="postit-author">
+                    <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=50&h=50&fit=crop&crop=face" alt="Carmen">
+                    <span>Carmen V.</span>
+                </div>
+            </article>
+
+            <!-- Post-it lavanda/lavender -->
+            <article class="review-card postit-style postit-lavender">
+                <div class="postit-pin"></div>
+                <div class="review-stars">★★★★★</div>
+                <p class="review-text">"Mi cocina es mi templo y la cuidan como tal 🙏"</p>
+                <div class="postit-author">
+                    <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=50&h=50&fit=crop&crop=face" alt="Pablo">
+                    <span>Pablo M.</span>
+                </div>
+            </article>
+
+            <!-- Post-it rosa -->
+            <article class="review-card postit-style postit-pink">
+                <div class="postit-pin"></div>
+                <div class="review-stars">★★★★★</div>
+                <p class="review-text">"Un hogar limpio es un hogar feliz 🏠"</p>
+                <div class="postit-author">
+                    <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=80&h=80&fit=crop&crop=face" alt="Sofía Navarro">
+                    <span>Sofía N.</span>
+                </div>
+            </article>
+
+            <!-- Post-it durazno/peach -->
+            <article class="review-card postit-style postit-peach">
+                <div class="postit-pin"></div>
+                <div class="review-stars">★★★★★</div>
+                <p class="review-text">"Puntualidad y profesionalismo 👌"</p>
+                <div class="postit-author">
+                    <img src="https://images.unsplash.com/photo-1542909168-82c3e7fdca5c?w=50&h=50&fit=crop&crop=face" alt="Miguel">
+                    <span>Miguel Á.</span>
+                </div>
+            </article>
+
+            <!-- Post-it crema/cream -->
+            <article class="review-card postit-style postit-cream">
+                <div class="postit-pin"></div>
+                <div class="review-stars">★★★★★</div>
+                <p class="review-text">"Respetan a mis mascotas y usan productos seguros 🐕"</p>
+                <div class="postit-author">
+                    <img src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?w=50&h=50&fit=crop&crop=face" alt="Beatriz Castro">
+                    <span>Beatriz C.</span>
+                </div>
+            </article>
+
+            <!-- Post-it azul -->
+            <article class="review-card postit-style postit-blue">
+                <div class="postit-pin"></div>
+                <div class="review-stars">★★★★★</div>
+                <p class="review-text">"El plan mensual me ahorra tiempo y dinero 💚"</p>
+                <div class="postit-author">
+                    <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=50&h=50&fit=crop&crop=face" alt="Patricia">
+                    <span>Patricia H.</span>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section" id="faq">
+        <div class="faq-container">
+            <div class="section-header">
+                <div class="section-tag">Preguntas Frecuentes</div>
+                <h2>¿Tienes dudas? Te ayudamos</h2>
+                <p>Encuentra respuestas a las preguntas más comunes sobre nuestros servicios de limpieza profesional</p>
+            </div>
+            
+            <div class="faq-grid">
+                <div class="faq-visual">
+                    <div class="faq-visual-card">
+                        <div class="faq-icon-large">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/>
+                                <path d="M12 16V12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                                <circle cx="12" cy="8" r="0.5" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <h3>¿Necesitas más información?</h3>
+                        <p>Nuestro equipo está disponible para resolver cualquier duda adicional</p>
+                        <a href="#contacto" class="faq-contact-btn">Contáctanos</a>
+                    </div>
+                </div>
+                
+                <div class="faq-accordion">
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>¿Cómo puedo reservar un servicio?</span>
+                            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19 9L12 16L5 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Reservar es muy sencillo. Puedes hacerlo desde nuestro formulario de contacto, por teléfono, o directamente desde el botón "Reservar Ahora". Selecciona el tipo de servicio, fecha y hora, y te confirmaremos la disponibilidad en minutos.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>¿Qué incluye el servicio de limpieza profunda?</span>
+                            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19 9L12 16L5 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Nuestro servicio de limpieza profunda incluye: limpieza detallada de ventanas y marcos, desinfección completa de baños y cocina, limpieza de electrodomésticos por dentro y fuera, aspirado y fregado de todas las superficies, limpieza de alturas y rincones difíciles.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>¿Debo estar en casa durante el servicio?</span>
+                            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19 9L12 16L5 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>No es necesario. Muchos de nuestros clientes nos confían las llaves de su hogar. Todo nuestro personal está certificado, asegurado y ha pasado rigurosas verificaciones de seguridad. Si lo prefieres, también puedes estar presente durante el servicio.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>¿Qué productos de limpieza utilizan?</span>
+                            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19 9L12 16L5 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Utilizamos productos de limpieza premium, ecológicos y seguros para toda la familia, incluyendo niños y mascotas. Son biodegradables, libres de químicos agresivos y certificados por organizaciones ambientales. Si tienes preferencias específicas, podemos adaptarnos.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>¿Puedo cancelar o reprogramar mi reserva?</span>
+                            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19 9L12 16L5 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Sí, puedes cancelar o reprogramar tu servicio con al menos 24 horas de anticipación sin ningún cargo. Para cambios de último momento, contáctanos y haremos nuestro mejor esfuerzo por adaptarnos a tu nueva disponibilidad.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>¿Ofrecen garantía de satisfacción?</span>
+                            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19 9L12 16L5 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>¡Absolutamente! Garantizamos tu satisfacción al 100%. Si algo no cumple con tus expectativas, regresamos en las siguientes 24 horas para corregirlo sin costo adicional. Tu tranquilidad es nuestra prioridad.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rewards Section -->
+    <section class="rewards-section" id="rewards">
+        <div class="rewards-container">
+            <div class="section-header">
+                <div class="section-tag">Reconocimientos & Alianzas</div>
+                <h2>Premiados por quienes <span class="rewards-highlight">más exigen</span></h2>
+                <p>Empresas líderes del sector nos avalan. Cada galardón refleja el compromiso que tenemos con nuestros clientes.</p>
+            </div>
+
+            <div class="rewards-grid">
+                <!-- Award 1 -->
+                <div class="reward-card reward-gold">
+                    <div class="reward-icon">
+                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="24" cy="20" r="12" stroke="currentColor" stroke-width="2.5"/>
+                            <path d="M16 30L12 44L24 38L36 44L32 30" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+                            <path d="M24 14L25.8 18.4L30.5 18.8L27.1 21.8L28.2 26.4L24 24L19.8 26.4L20.9 21.8L17.5 18.8L22.2 18.4L24 14Z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <div class="reward-body">
+                        <div class="reward-partner">Hogares & Bienestar</div>
+                        <h3 class="reward-title">Mejor Servicio de Limpieza 2024</h3>
+                        <p class="reward-desc">Reconocidos como el servicio de limpieza doméstica con mayor índice de satisfacción en España durante dos años consecutivos.</p>
+                        <div class="reward-year">· 2023 · 2024 ·</div>
+                    </div>
+                </div>
+
+                <!-- Award 2 -->
+                <div class="reward-card reward-green">
+                    <div class="reward-icon">
+                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M24 4C24 4 8 12 8 26C8 34.8 15.2 42 24 42C32.8 42 40 34.8 40 26C40 12 24 4 24 4Z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+                            <path d="M16 26L21 31L32 20" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="reward-body">
+                        <div class="reward-partner">EcoClean Alliance</div>
+                        <h3 class="reward-title">Certificación Eco-Responsable</h3>
+                        <p class="reward-desc">Partner oficial certificado por el uso exclusivo de productos biodegradables y procesos de limpieza respetuosos con el medioambiente.</p>
+                        <div class="reward-year">· Partner Oficial ·</div>
+                    </div>
+                </div>
+
+                <!-- Award 3 -->
+                <div class="reward-card reward-purple">
+                    <div class="reward-icon">
+                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M24 6L28.4 16.8L40 17.6L31.6 25.2L34.2 36.6L24 30.8L13.8 36.6L16.4 25.2L8 17.6L19.6 16.8L24 6Z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="reward-body">
+                        <div class="reward-partner">Cámara de Comercio Madrid</div>
+                        <h3 class="reward-title">Distinción a la Excelencia Empresarial</h3>
+                        <p class="reward-desc">Galardonados por nuestro modelo de negocio innovador, la calidad de empleo generado y el impacto positivo en la comunidad.</p>
+                        <div class="reward-year">· 2024 ·</div>
+                    </div>
+                </div>
+
+                <!-- Award 4 -->
+                <div class="reward-card reward-blue">
+                    <div class="reward-icon">
+                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="8" y="14" width="32" height="22" rx="3" stroke="currentColor" stroke-width="2.5"/>
+                            <path d="M16 14V10C16 8.9 16.9 8 18 8H30C31.1 8 32 8.9 32 10V14" stroke="currentColor" stroke-width="2.5"/>
+                            <path d="M8 22H40" stroke="currentColor" stroke-width="2.5"/>
+                            <circle cx="24" cy="28" r="3" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <div class="reward-body">
+                        <div class="reward-partner">Trustpilot España</div>
+                        <h3 class="reward-title">Premio Confianza del Consumidor</h3>
+                        <p class="reward-desc">Empresa verificada con puntuación Excelente — más de 2.400 reseñas reales que respaldan nuestra reputación online.</p>
+                        <div class="reward-year">· 4.9 / 5 estrellas ·</div>
+                    </div>
+                </div>
+
+                <!-- Award 5 -->
+                <div class="reward-card reward-amber">
+                    <div class="reward-icon">
+                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 38V20L24 10L36 20V38H28V28H20V38H12Z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+                            <circle cx="24" cy="21" r="3" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <div class="reward-body">
+                        <div class="reward-partner">Asociación de Vecinos de España</div>
+                        <h3 class="reward-title">Proveedor Recomendado del Hogar</h3>
+                        <p class="reward-desc">Empresa avalada y recomendada por comunidades de propietarios en más de 18 provincias españolas como servicio de referencia.</p>
+                        <div class="reward-year">· Desde 2022 ·</div>
+                    </div>
+                </div>
+
+                <!-- Award 6 -->
+                <div class="reward-card reward-teal">
+                    <div class="reward-icon">
+                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M24 6L28 18H40L30 26L34 38L24 30L14 38L18 26L8 18H20L24 6Z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="reward-body">
+                        <div class="reward-partner">LimpHogar Pro</div>
+                        <h3 class="reward-title">Partner Tecnológico Estratégico</h3>
+                        <p class="reward-desc">Alianza oficial con el principal fabricante de maquinaria profesional de limpieza en España, garantizando equipos de última generación.</p>
+                        <div class="reward-year">· Alianza Estratégica ·</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="rewards-partners-strip">
+                <p class="rewards-partners-label">También colaboramos con</p>
+                <div class="rewards-partners-logos">
+                    <span class="partner-badge">🏢 Urbania Real Estate</span>
+                    <span class="partner-badge">🏨 NH Hotels Group</span>
+                    <span class="partner-badge">🏗️ Acciona Facilities</span>
+                    <span class="partner-badge">🌿 Ecover España</span>
+                    <span class="partner-badge">📱 Habitissimo</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <img src="https://limpy.gestoriaencasa.es/_next/image/?url=/images/logos/logo-blue.webp&w=256&q=75" alt="Limpy Logo">
+                </div>
+                <p class="footer-about">Tu solución profesional de limpieza del hogar. Transformamos espacios, liberamos tiempo.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Servicios</h4>
+                <ul class="footer-links">
+                    <li><a href="#servicios">Limpieza Profunda</a></li>
+                    <li><a href="#servicios">Limpieza Regular</a></li>
+                    <li><a href="#servicios">Limpieza Ecológica</a></li>
+                    <li><a href="#precios">Ver Precios</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Empresa</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Sobre Nosotros</a></li>
+                    <li><a href="#testimonios">Testimonios</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Legal</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Privacidad</a></li>
+                    <li><a href="#">Términos</a></li>
+                    <li><a href="#">Cookies</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Limpy. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Navbar scroll effect
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Services Card Stack
+        (function() {
+            const stage = document.getElementById('svcStage');
+            const cards = Array.from(stage.querySelectorAll('.svc-card'));
+            const dots  = Array.from(document.querySelectorAll('.svc-dot'));
+            const total = cards.length;
+            let current = 0;
+            let animating = false;
+
+            function updateCards() {
+                cards.forEach((card, i) => {
+                    card.classList.remove('active', 'stack-left', 'stack-right');
+                    if (i === current) {
+                        card.classList.add('active');
+                    } else if (i === (current - 1 + total) % total) {
+                        // Previous card: left side
+                        card.classList.add('stack-left');
+                    } else {
+                        // Next card: right side
+                        card.classList.add('stack-right');
+                    }
+                });
+                dots.forEach((dot, i) => dot.classList.toggle('active', i === current));
+            }
+
+            function goTo(index) {
+                if (animating || index === current) return;
+                animating = true;
+                current = ((index % total) + total) % total;
+                updateCards();
+                setTimeout(() => { animating = false; }, 680);
+            }
+
+            function goNext() { goTo((current + 1) % total); }
+            function goPrev() { goTo((current - 1 + total) % total); }
+
+            // Click active card → advance; click stacked card → navigate
+            stage.addEventListener('click', (e) => {
+                const card = e.target.closest('.svc-card');
+                if (!card) return;
+                if (card.classList.contains('active')) {
+                    goNext();
+                } else if (card.classList.contains('stack-right')) {
+                    goNext();
+                } else {
+                    goPrev();
+                }
+            });
+
+            dots.forEach((dot, i) => dot.addEventListener('click', () => goTo(i)));
+
+            // Swipe
+            let touchStartX = 0;
+            stage.addEventListener('touchstart', e => { touchStartX = e.touches[0].clientX; }, { passive: true });
+            stage.addEventListener('touchend', e => {
+                const diff = touchStartX - e.changedTouches[0].clientX;
+                if (Math.abs(diff) > 40) { if (diff > 0) goNext(); else goPrev(); }
+            });
+
+            updateCards();
+        })();
+
+        // Carousel automático de imágenes
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.carousel-slide');
+        const indicators = document.querySelectorAll('.indicator');
+        
+        function showSlide(index) {
+            slides.forEach(slide => slide.classList.remove('active'));
+            indicators.forEach(indicator => indicator.classList.remove('active'));
+            
+            slides[index].classList.add('active');
+            indicators[index].classList.add('active');
+        }
+        
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+        }
+        
+        setInterval(nextSlide, 4000);
+
+        // FAQ Accordion
+        const faqQuestions = document.querySelectorAll('.faq-question');
+        
+        faqQuestions.forEach(question => {
+            question.addEventListener('click', () => {
+                const faqItem = question.parentElement;
+                const isActive = faqItem.classList.contains('active');
+                
+                document.querySelectorAll('.faq-item').forEach(item => {
+                    item.classList.remove('active');
+                    item.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+                });
+                
+                if (!isActive) {
+                    faqItem.classList.add('active');
+                    question.setAttribute('aria-expanded', 'true');
+                }
+            });
+        });
+
+        // Pricing Toggle
+        const billingToggle = document.getElementById('billingToggle');
+        const priceSingles = document.querySelectorAll('.price-single');
+        const pricesMonthlies = document.querySelectorAll('.price-monthly');
+        const subtitleSingles = document.querySelectorAll('.price-subtitle-single');
+        const subtitleMonthlies = document.querySelectorAll('.price-subtitle-monthly');
+        const featuresSingles = document.querySelectorAll('.pricing-features-single');
+        const featuresMonthlies = document.querySelectorAll('.pricing-features-monthly');
+        
+        billingToggle.addEventListener('change', function() {
+            if (this.checked) {
+                priceSingles.forEach(price => price.style.display = 'none');
+                pricesMonthlies.forEach(price => price.style.display = 'inline');
+                subtitleSingles.forEach(subtitle => subtitle.style.display = 'none');
+                subtitleMonthlies.forEach(subtitle => subtitle.style.display = 'inline');
+                featuresSingles.forEach(features => features.style.display = 'none');
+                featuresMonthlies.forEach(features => features.style.display = 'block');
+            } else {
+                priceSingles.forEach(price => price.style.display = 'inline');
+                pricesMonthlies.forEach(price => price.style.display = 'none');
+                subtitleSingles.forEach(subtitle => subtitle.style.display = 'inline');
+                subtitleMonthlies.forEach(subtitle => subtitle.style.display = 'none');
+                featuresSingles.forEach(features => features.style.display = 'block');
+                featuresMonthlies.forEach(features => features.style.display = 'none');
+            }
+        });
+    </script>
+</body>
+</html>

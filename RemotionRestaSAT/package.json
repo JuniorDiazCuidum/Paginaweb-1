@@ -1,0 +1,31 @@
+{
+  "name": "remotionrestasat",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "remotion studio",
+    "build": "remotion render RestaSATPromo out/restasat-promo.mp4",
+    "build:limpy": "remotion render LimpyVertical out/limpy-promo.mp4",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@remotion/cli": "4.0.450",
+    "@remotion/tailwind": "4.0.450",
+    "lucide-react": "^1.8.0",
+    "react": "^19.2.5",
+    "react-dom": "^19.2.5",
+    "remotion": "4.0.450"
+  },
+  "devDependencies": {
+    "@types/node": "^25.6.0",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "autoprefixer": "^10.5.0",
+    "postcss": "^8.5.10",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^6.0.3"
+  }
+}
